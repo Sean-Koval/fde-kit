@@ -53,6 +53,8 @@ Turn evidence into a shared problem definition, desired outcome, success measure
 - Workshop facilitation
 - Stakeholder alignment and decision logging
 
+Related catalogs: [Skills](../../skills/README.md) teach reusable capabilities; [Toolkit](../../toolkit/README.md) contains reusable artifacts.
+
 ## Practice
 
 Take the candidate problem statement from Discover. Rewrite it to name the affected users, current pain, desired outcome, one measurable success signal, and one explicit out-of-scope boundary.

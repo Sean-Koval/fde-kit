@@ -1,6 +1,6 @@
 # FDE toolkit
 
-The toolkit contains directly reusable artifacts for field work. It answers **what can I use right now**. A toolkit item is not an instructional guide: use [skills](../skills/README.md) to learn the reusable capability behind it, and [examples](../examples/README.md) to see completed engagement outputs.
+The toolkit is a curated catalog and contribution contract for directly reusable field artifacts. Published toolkit items answer **what can I use right now**. A toolkit item is not an instructional guide: use [skills](../skills/README.md) to learn the reusable capability behind it, and [examples](../examples/README.md) to see published completed engagement outputs.
 
 ## Candidate assets
 
@@ -28,4 +28,4 @@ Every toolkit artifact must state:
 - **Expected output:** the result a user should produce.
 - **Supported stages:** the applicable [lifecycle stages](../stages/README.md).
 
-Add an artifact only when an FDE can use it directly in field work. Keep reusable methods and judgment in [skills](../skills/README.md), and keep completed engagement artifacts in [examples](../examples/README.md).
+Add an artifact only when an FDE can use it directly in field work. Keep reusable methods and judgment in [skills](../skills/README.md), and keep completed engagement artifacts in [examples](../examples/README.md). Substantive artifacts are added only when they meet the repository quality bar.

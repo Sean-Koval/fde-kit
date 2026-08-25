@@ -24,6 +24,10 @@ The lifecycle is a guide, not a one-way conveyor belt. New evidence can require 
 | [Toolkit](toolkit/README.md) | What can I use right now? | Directly reusable field artifacts. |
 | [Examples](examples/README.md) | What does good FDE work look like? | Coherent, completed example engagements. |
 
+## Current release
+
+The skills, toolkit, and examples sections currently define curated catalogs and contribution contracts. Substantive guides, reusable artifacts, and worked engagements will be added only when they meet the repository quality bar.
+
 ### Stage playbook
 
 1. [Discover](stages/01-discover/README.md)
@@ -41,13 +45,13 @@ The lifecycle is a guide, not a one-way conveyor belt. New evidence can require 
 1. Read [What is an FDE?](learning/what-is-an-fde.md).
 2. Learn the [operating principles](learning/operating-principles.md).
 3. Study the [engagement lifecycle](learning/engagement-lifecycle.md).
-4. Watch the [FDE overview presentation](learning/presentations/fde-overview.html).
+4. Use the [AI Implementation Field Playbook](learning/presentations/fde-overview.html) locally. GitHub displays HTML source, so clone or download this repository, then open `learning/presentations/fde-overview.html` in a browser.
 
 ### Active-engagement path
 
 1. Use the [engagement lifecycle](learning/engagement-lifecycle.md) to identify the current stage and its expected transition.
 2. Ground decisions in the [operating principles](learning/operating-principles.md).
-3. Use the [stage playbook](stages/README.md), [skills](skills/README.md), [toolkit assets](toolkit/README.md), and [examples](examples/README.md) for the engagement at hand.
+3. Use the [stage playbook](stages/README.md) for current engagement guidance. Consult the [skills](skills/README.md), [toolkit](toolkit/README.md), and [examples](examples/README.md) indexes for their curated catalogs and contribution contracts; use a guide, artifact, or worked engagement only when it has been added.
 
 ## Contribution quality bar
 

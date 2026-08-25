@@ -53,6 +53,8 @@ Understand the customer’s context, workflows, stakeholders, constraints, and s
 - Stakeholder mapping
 - Evidence synthesis
 
+Related catalogs: [Skills](../../skills/README.md) teach reusable capabilities; [Toolkit](../../toolkit/README.md) contains reusable artifacts.
+
 ## Practice
 
 Choose a familiar manual workflow. Draft five interview questions that reveal its users, handoffs, constraints, and pain signals, then write one evidence-backed candidate problem statement.

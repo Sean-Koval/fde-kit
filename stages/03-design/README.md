@@ -53,6 +53,8 @@ Explore and validate a feasible solution approach, including experience, technic
 - Architecture and integration design
 - Risk analysis and incremental planning
 
+Related catalogs: [Skills](../../skills/README.md) teach reusable capabilities; [Toolkit](../../toolkit/README.md) contains reusable artifacts.
+
 ## Practice
 
 For a framed problem, list two plausible solution approaches. Compare them against one success measure, one technical constraint, and one adoption risk; then identify the smallest validation experiment for the recommended approach.

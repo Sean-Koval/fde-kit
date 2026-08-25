@@ -1,6 +1,6 @@
 # FDE skills
 
-Skills teach reusable instructional capabilities that span multiple lifecycle stages. They answer **how to perform a capability well**. A skill guide is not a downloadable artifact: use the [toolkit](../toolkit/README.md) when you need something to use immediately, and [examples](../examples/README.md) when you need to see completed work.
+Skills is a curated catalog and contribution contract for reusable instructional capabilities that span multiple lifecycle stages. Published skill guides teach **how to perform a capability well**. A skill guide is not a downloadable artifact: use the [toolkit](../toolkit/README.md) for published reusable artifacts, and [examples](../examples/README.md) for published completed work.
 
 ## Candidate guides
 
@@ -27,4 +27,4 @@ Every skill guide must include:
 - **Rubric:** a self-assessment guide for evaluating the result.
 - **Links:** the applicable [lifecycle stages](../stages/README.md) and relevant [toolkit assets](../toolkit/README.md).
 
-Add a skill only when it teaches a capability that can be reused across engagements. Keep stage-specific sequencing in the [stage playbook](../stages/README.md), and put directly reusable materials in the [toolkit](../toolkit/README.md).
+Add a skill only when it teaches a capability that can be reused across engagements. Keep stage-specific sequencing in the [stage playbook](../stages/README.md), and put directly reusable materials in the [toolkit](../toolkit/README.md). Substantive guides are added only when they meet the repository quality bar.

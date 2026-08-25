@@ -53,6 +53,8 @@ Create the working solution in small increments, validating assumptions and qual
 - Technical decision recording
 - Production-readiness planning
 
+Related catalogs: [Skills](../../skills/README.md) teach reusable capabilities; [Toolkit](../../toolkit/README.md) contains reusable artifacts.
+
 ## Practice
 
 Choose a proposed solution and define its smallest valuable increment. State the user outcome it should produce, the acceptance signal that would validate it, and one production requirement to address during the increment.

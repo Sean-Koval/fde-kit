@@ -53,6 +53,8 @@ Use outcomes, learning, and demand to decide whether and how to extend the value
 - Portfolio and scope management
 - Discovery re-entry and engagement planning
 
+Related catalogs: [Skills](../../skills/README.md) teach reusable capabilities; [Toolkit](../../toolkit/README.md) contains reusable artifacts.
+
 ## Practice
 
 Using a hypothetical adoption and outcome report, choose one of four decisions: extend, improve, pause, or begin a new discovery cycle. State the evidence that supports it and the first question the next stage must answer.

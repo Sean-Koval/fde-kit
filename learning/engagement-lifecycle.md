@@ -36,4 +36,4 @@ Use outcomes, learning, and demand to decide whether and how to extend the value
 
 ## Using this model
 
-Learning pages provide the shared concepts behind the lifecycle. Stage pages will provide the detailed guidance for what to do now; skills, toolkit assets, and examples will support the work without duplicating it.
+Learning pages provide the shared concepts behind the lifecycle. The [stage playbook](../stages/README.md) provides detailed guidance for what to do now. The [skills](../skills/README.md), [toolkit](../toolkit/README.md), and [examples](../examples/README.md) indexes define curated catalogs and contribution contracts for content that meets the repository quality bar.

@@ -1,6 +1,6 @@
 # FDE examples
 
-Examples demonstrate what good FDE work looks like through completed outputs. They are not instructional guides or blank reusable artifacts: use [skills](../skills/README.md) to learn a capability and the [toolkit](../toolkit/README.md) to use an artifact in the field.
+Examples is a curated catalog and contribution contract for completed outputs that demonstrate good FDE work. Published examples are not instructional guides or blank reusable artifacts: use [skills](../skills/README.md) to learn a capability and the [toolkit](../toolkit/README.md) to use a published artifact in the field.
 
 ## Preferred format
 
@@ -19,4 +19,4 @@ The preferred future example is one coherent fictional engagement. It should fol
 | 7 | Deployment record, operational handoff, and enablement evidence | [Deploy](../stages/05-deploy/README.md), [Enable](../stages/06-enable/README.md) |
 | 8 | Outcome review, expansion decision, and executive update | [Enable](../stages/06-enable/README.md), [Expand](../stages/07-expand/README.md) |
 
-Add examples as completed, internally consistent outputs from this fictional engagement. Do not repeat stage instructions, turn an example into a blank template, or collect unrelated samples without the customer context that makes the decisions understandable.
+Add examples as completed, internally consistent outputs from this fictional engagement. Do not repeat stage instructions, turn an example into a blank template, or collect unrelated samples without the customer context that makes the decisions understandable. Substantive worked engagements are added only when they meet the repository quality bar.

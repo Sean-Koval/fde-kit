@@ -53,6 +53,8 @@ Help users and owners adopt, operate, and improve the solution.
 - Operational handoff
 - Adoption and outcome measurement
 
+Related catalogs: [Skills](../../skills/README.md) teach reusable capabilities; [Toolkit](../../toolkit/README.md) contains reusable artifacts.
+
 ## Practice
 
 Pick a released solution and define a 30-day enablement check-in. Include one user behavior to observe, one owner capability to confirm, one outcome measure, and the decision you would make if adoption is weak.

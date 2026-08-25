@@ -53,6 +53,8 @@ Put the solution into the customer’s operating environment with the required r
 - Observability design
 - Operational handoff and incident response
 
+Related catalogs: [Skills](../../skills/README.md) teach reusable capabilities; [Toolkit](../../toolkit/README.md) contains reusable artifacts.
+
 ## Practice
 
 For a working increment, write a lightweight rollout plan that names the first users, one health signal, one outcome signal, a rollback trigger, and the owner responsible for responding to it.

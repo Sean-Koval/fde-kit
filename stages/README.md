@@ -1,6 +1,6 @@
 # Lifecycle stage playbook
 
-Use this playbook to decide what should happen now in a customer engagement. It turns the shared [engagement lifecycle](../learning/engagement-lifecycle.md) into operational guidance without replacing the reusable skills and toolkit assets that will support the work.
+Use this playbook to decide what should happen now in a customer engagement. It turns the shared [engagement lifecycle](../learning/engagement-lifecycle.md) into operational guidance. The [skills](../skills/README.md) and [toolkit](../toolkit/README.md) indexes define curated catalogs and contribution contracts; they do not yet supply stage-ready guides or artifacts.
 
 ## The lifecycle
 

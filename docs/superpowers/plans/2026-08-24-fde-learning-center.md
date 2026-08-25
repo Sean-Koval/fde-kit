@@ -285,7 +285,7 @@ Run:
 ~~~bash
 git log --oneline --decorate --max-count=5
 git status --short --branch
-git push -u origin main
+git push -u origin HEAD:main
 ~~~
 
 Expected: the worktree is clean and main tracks origin/main after a successful push.
