@@ -19,10 +19,20 @@ The lifecycle is a guide, not a one-way conveyor belt. New evidence can require 
 | Area | Use it to answer | What belongs there |
 | --- | --- | --- |
 | [Learning](learning/README.md) | What is an FDE, and why does the work matter? | Concepts, mental models, operating principles, and lifecycle context. |
-| Stages | What should happen now? | Operational guidance for each lifecycle stage. |
-| Skills | How do I perform a capability well? | Reusable instructional guides that span stages. |
-| Toolkit | What can I use right now? | Directly reusable field artifacts. |
-| Examples | What does good FDE work look like? | Coherent, completed example engagements. |
+| [Stages](stages/README.md) | What should happen now? | Operational guidance for each lifecycle stage. |
+| [Skills](skills/README.md) | How do I perform a capability well? | Reusable instructional guides that span stages. |
+| [Toolkit](toolkit/README.md) | What can I use right now? | Directly reusable field artifacts. |
+| [Examples](examples/README.md) | What does good FDE work look like? | Coherent, completed example engagements. |
+
+### Stage playbook
+
+1. [Discover](stages/01-discover/README.md)
+2. [Frame](stages/02-frame/README.md)
+3. [Design](stages/03-design/README.md)
+4. [Build](stages/04-build/README.md)
+5. [Deploy](stages/05-deploy/README.md)
+6. [Enable](stages/06-enable/README.md)
+7. [Expand](stages/07-expand/README.md)
 
 ## Start here
 
@@ -37,7 +47,7 @@ The lifecycle is a guide, not a one-way conveyor belt. New evidence can require 
 
 1. Use the [engagement lifecycle](learning/engagement-lifecycle.md) to identify the current stage and its expected transition.
 2. Ground decisions in the [operating principles](learning/operating-principles.md).
-3. Use stage guidance, skills, toolkit assets, and examples as they are added for the engagement at hand.
+3. Use the [stage playbook](stages/README.md), [skills](skills/README.md), [toolkit assets](toolkit/README.md), and [examples](examples/README.md) for the engagement at hand.
 
 ## Contribution quality bar
 
