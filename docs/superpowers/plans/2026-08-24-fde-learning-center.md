@@ -49,7 +49,7 @@
 - Consumes: The content boundaries and lifecycle defined in the design spec.
 - Produces: Canonical descriptions and relative links used by every section index and stage page.
 
-- [ ] **Step 1: Record the source presentation checksum**
+- [x] **Step 1: Record the source presentation checksum**
 
 Run:
 
@@ -59,7 +59,7 @@ shasum -a 256 fde_reveal_deck_v3.html
 
 Expected: one SHA-256 digest followed by the source filename; retain the digest for Step 4.
 
-- [ ] **Step 2: Create the learning directories and move the presentation**
+- [x] **Step 2: Create the learning directories and move the presentation**
 
 Run:
 
@@ -70,11 +70,11 @@ mv fde_reveal_deck_v3.html learning/presentations/fde-overview.html
 
 Expected: the renamed presentation exists and the old root-level filename does not.
 
-- [ ] **Step 3: Write the repository and learning documents**
+- [x] **Step 3: Write the repository and learning documents**
 
 Use apply_patch to create the five Markdown files. The root README must include purpose, audience, lifecycle, a content-area table, learner path, active-engagement path, presentation link, and contribution quality bar. The learning pages must define the role, operating principles, and stage transitions without duplicating detailed stage instructions.
 
-- [ ] **Step 4: Verify the presentation and learning links**
+- [x] **Step 4: Verify the presentation and learning links**
 
 Run:
 
@@ -85,7 +85,7 @@ rg -n '\]\([^)]*\)' README.md learning/*.md
 
 Expected: the presentation digest exactly matches Step 1, and every listed relative Markdown target exists.
 
-- [ ] **Step 5: Commit the gateway and learning foundation**
+- [x] **Step 5: Commit the gateway and learning foundation**
 
 Run:
 
@@ -112,7 +112,7 @@ Expected: a commit containing the learning documents and the presentation rename
 - Consumes: Canonical lifecycle language from learning/engagement-lifecycle.md.
 - Produces: Stable stage paths referenced by the root README and future skills, tools, and examples.
 
-- [ ] **Step 1: Create the seven stage directories**
+- [x] **Step 1: Create the seven stage directories**
 
 Run:
 
@@ -122,19 +122,19 @@ mkdir -p stages/01-discover stages/02-frame stages/03-design stages/04-build sta
 
 Expected: seven numbered directories exist in lifecycle order.
 
-- [ ] **Step 2: Write the lifecycle index**
+- [x] **Step 2: Write the lifecycle index**
 
 Use apply_patch to create stages/README.md with a linked seven-stage sequence, an explanation that engagements may loop backward, and the shared stage-page schema.
 
-- [ ] **Step 3: Write Discover, Frame, and Design guidance**
+- [x] **Step 3: Write Discover, Frame, and Design guidance**
 
 Use apply_patch to create the first three stage READMEs. Each must include objective, entry conditions, questions, activities, deliverables, exit criteria, failure modes, related capabilities, and a practice prompt. The progression must turn customer evidence into an agreed problem frame and then a validated solution approach.
 
-- [ ] **Step 4: Write Build, Deploy, Enable, and Expand guidance**
+- [x] **Step 4: Write Build, Deploy, Enable, and Expand guidance**
 
 Use apply_patch to create the final four stage READMEs with the same schema. The progression must turn the validated approach into working value, production operation, customer independence, and evidence-based expansion.
 
-- [ ] **Step 5: Verify stage consistency**
+- [x] **Step 5: Verify stage consistency**
 
 Run:
 
@@ -148,7 +148,7 @@ done
 
 Expected: no output.
 
-- [ ] **Step 6: Commit the lifecycle playbook**
+- [x] **Step 6: Commit the lifecycle playbook**
 
 Run:
 
@@ -171,23 +171,23 @@ Expected: a commit containing the lifecycle index and all seven stage READMEs.
 - Consumes: Stage paths from Task 2 and content-boundary language from the design spec.
 - Produces: Contribution contracts that prevent skill guides, reusable assets, and worked examples from overlapping.
 
-- [ ] **Step 1: Write the skills index**
+- [x] **Step 1: Write the skills index**
 
 Use apply_patch to explain that skills are reusable instructional capabilities, list high-value candidate guides mapped to stages, and define the required guide structure: relevance, technique, examples, exercise, rubric, and links.
 
-- [ ] **Step 2: Write the toolkit index**
+- [x] **Step 2: Write the toolkit index**
 
 Use apply_patch to explain that toolkit items are directly reusable artifacts, list high-value candidate assets mapped to stages, and define the required artifact metadata: purpose, timing, instructions, expected output, and supported stages.
 
-- [ ] **Step 3: Write the examples index**
+- [x] **Step 3: Write the examples index**
 
 Use apply_patch to define a coherent fictional engagement as the preferred example format and list its future artifact sequence from customer context through executive update.
 
-- [ ] **Step 4: Complete cross-navigation from the root README**
+- [x] **Step 4: Complete cross-navigation from the root README**
 
 Use apply_patch to ensure the root README links to all five public content areas, all seven lifecycle stages, and the overview presentation using relative paths.
 
-- [ ] **Step 5: Commit the content contracts**
+- [x] **Step 5: Commit the content contracts**
 
 Run:
 
@@ -207,7 +207,7 @@ Expected: a commit containing the three indexes and any root navigation refineme
 - Consumes: All deliverables from Tasks 1–3.
 - Produces: A verified main branch published to origin/main.
 
-- [ ] **Step 1: Validate required files and forbidden public buckets**
+- [x] **Step 1: Validate required files and forbidden public buckets**
 
 Run:
 
@@ -232,7 +232,7 @@ test ! -d resources
 
 Expected: exit status 0 with no output.
 
-- [ ] **Step 2: Check every relative Markdown link**
+- [x] **Step 2: Check every relative Markdown link**
 
 Run:
 
@@ -255,7 +255,7 @@ exit "$missing"
 
 Expected: exit status 0 with no missing targets.
 
-- [ ] **Step 3: Check repository hygiene**
+- [x] **Step 3: Check repository hygiene**
 
 Run:
 
@@ -267,7 +267,7 @@ git status --short
 
 Expected: no whitespace errors, no empty public-facing directories, and only the implementation-plan completion update remains uncommitted.
 
-- [ ] **Step 4: Commit the completed implementation plan**
+- [x] **Step 4: Commit the completed implementation plan**
 
 Run:
 
