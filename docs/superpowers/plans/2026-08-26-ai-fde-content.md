@@ -104,7 +104,7 @@
 - Consumes: Tasks 1–4.
 - Produces: A verified feature branch ready for integration.
 
-- [ ] Check required files, artifact/skill schemas, stage schemas, deck slide count and IDs, source links, and example coverage.
-- [ ] Check all relative Markdown links, empty public directories, forbidden top-level resources, and whitespace errors.
-- [ ] Re-render and inspect every slide after the integrated changes.
-- [ ] Mark completed plan steps and commit with `docs: record AI FDE content implementation`.
+- [x] Check required files, artifact/skill schemas, stage schemas, deck slide count and IDs, source links, and example coverage.
+- [x] Check all relative Markdown links, empty public directories, forbidden top-level resources, and whitespace errors.
+- [x] Re-render and inspect every slide after the integrated changes.
+- [x] Mark completed plan steps and commit with `docs: record AI FDE content implementation`.
