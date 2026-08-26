@@ -32,12 +32,12 @@
 - Consumes: The operating model and presentation requirements in the spec.
 - Produces: Canonical deck terminology and seven named field artifacts used by later tasks.
 
-- [ ] Replace dense slides with an opportunity heatmap, observation loop, representative workflow swimlane, layered enterprise architecture, evaluation flywheel, deployment gates, and lifecycle artifact map.
-- [ ] Add complete AI FDE ownership, technical delivery, enterprise integration, security/governance, Day 2 operations, adoption, product feedback, and expansion coverage without exceeding 18 slides.
-- [ ] Add unique slide IDs, semantic visible copy, point-based typography, speaker notes, and primary-source links.
-- [ ] Update learning copy so the role description explicitly frames this repository around AI implementation.
-- [ ] Run structural checks, overflow checks, and render screenshots of every slide; inspect and correct visual defects.
-- [ ] Commit with `docs: refine AI FDE field playbook`.
+- [x] Replace dense slides with an opportunity heatmap, observation loop, representative workflow swimlane, layered enterprise architecture, evaluation flywheel, deployment gates, and lifecycle artifact map.
+- [x] Add complete AI FDE ownership, technical delivery, enterprise integration, security/governance, Day 2 operations, adoption, product feedback, and expansion coverage without exceeding 18 slides.
+- [x] Add unique slide IDs, semantic visible copy, point-based typography, speaker notes, and primary-source links.
+- [x] Update learning copy so the role description explicitly frames this repository around AI implementation.
+- [x] Run structural checks, overflow checks, and render screenshots of every slide; inspect and correct visual defects.
+- [x] Commit with `docs: refine AI FDE field playbook`.
 
 ### Task 2: Create the field toolkit
 
@@ -55,10 +55,10 @@
 - Consumes: Artifact names and lifecycle language from Task 1.
 - Produces: Stable artifact paths linked by skills, stages, and the example.
 
-- [ ] Write seven copy-ready artifacts with purpose, timing, instructions, output, supported stages, template, and completion checks.
-- [ ] Make safety, ownership, evidence, rollback, and measurable impact explicit where relevant.
-- [ ] Replace the candidate-only toolkit catalog with links to the real artifacts while preserving the contribution contract.
-- [ ] Validate every artifact against the required schema and commit with `docs: add AI FDE field toolkit`.
+- [x] Write seven copy-ready artifacts with purpose, timing, instructions, output, supported stages, template, and completion checks.
+- [x] Make safety, ownership, evidence, rollback, and measurable impact explicit where relevant.
+- [x] Replace the candidate-only toolkit catalog with links to the real artifacts while preserving the contribution contract.
+- [x] Validate every artifact against the required schema and commit with `docs: add AI FDE field toolkit`.
 
 ### Task 3: Add cross-stage AI FDE skills
 
@@ -74,10 +74,10 @@
 - Consumes: Toolkit paths from Task 2.
 - Produces: Four instructional guides and stage-to-content navigation.
 
-- [ ] Write four guides containing relevance, timing, repeatable technique, good/weak patterns, practice, self-assessment, and stage/toolkit links.
-- [ ] Replace the candidate-only skills catalog with links to the real guides and retain only genuinely useful future candidates.
-- [ ] Update every stage's Related capabilities section to link to applicable real skills and toolkit assets.
-- [ ] Check all relative links and commit with `docs: add AI FDE capability guides`.
+- [x] Write four guides containing relevance, timing, repeatable technique, good/weak patterns, practice, self-assessment, and stage/toolkit links.
+- [x] Replace the candidate-only skills catalog with links to the real guides and retain only genuinely useful future candidates.
+- [x] Update every stage's Related capabilities section to link to applicable real skills and toolkit assets.
+- [x] Check all relative links and commit with `docs: add AI FDE capability guides`.
 
 ### Task 4: Demonstrate the complete lifecycle
 
@@ -90,10 +90,10 @@
 - Consumes: All seven toolkit artifacts, four skills, and seven lifecycle stages.
 - Produces: A canonical worked example and updated repository entry paths.
 
-- [ ] Write a fictional accounts-payable engagement showing Discover through Expand and completed excerpts of all seven artifacts.
-- [ ] Include baseline, target, architecture, evaluation thresholds, staged rollout, Day 2 ownership, measured outcome, limitations, and evidence-based expansion decision.
-- [ ] Update example and root navigation to point to substantive content rather than future catalogs.
-- [ ] Verify the example references every artifact and lifecycle stage, then commit with `docs: add worked AI FDE engagement`.
+- [x] Write a fictional accounts-payable engagement showing Discover through Expand and completed excerpts of all seven artifacts.
+- [x] Include baseline, target, architecture, evaluation thresholds, staged rollout, Day 2 ownership, measured outcome, limitations, and evidence-based expansion decision.
+- [x] Update example and root navigation to point to substantive content rather than future catalogs.
+- [x] Verify the example references every artifact and lifecycle stage, then commit with `docs: add worked AI FDE engagement`.
 
 ### Task 5: Verify the integrated release
 
