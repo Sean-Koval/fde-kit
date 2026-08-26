@@ -6,7 +6,7 @@ Choose a first workflow investment using comparable evidence about impact, AI an
 
 ## Timing
 
-Use during [Discover](../stages/01-discover/README.md) and [Frame](../stages/02-frame/README.md), before committing delivery capacity or promising a production outcome.
+Use during [Discover](../stages/01-discover/README.md) and [Frame](../stages/02-frame/README.md), before committing delivery capacity or promising a production outcome. Reuse it during [Expand](../stages/07-expand/README.md) to reprioritize new workflow investments from measured outcomes, operating evidence, and changed constraints.
 
 ## Instructions
 
@@ -29,9 +29,24 @@ A ranked, evidence-backed opportunity decision with a bounded first wedge, known
 ## Template
 
 ```markdown
-# Opportunity scorecard — [workflow name]
+# Opportunity scorecard — [candidate workflow]
 
-## Decision
+## Comparison and selection
+
+Compare all candidates using the same evidence standard. A rank is a decision aid, not a substitute for the evidence and safeguards recorded below.
+
+| Rank | Candidate workflow | Impact | Measurability | AI and delivery fit | Operational readiness | Risk manageability | Evidence gap or constraint | Recommendation |
+| ---: | --- | ---: | ---: | ---: | ---: | ---: | --- | --- |
+| [1] | [workflow] | [1–5] | [1–5] | [1–5] | [1–5] | [1–5] | [gap or constraint] | [advance/investigate/defer/enable locally] |
+| [2] | [workflow] | [1–5] | [1–5] | [1–5] | [1–5] | [1–5] | [gap or constraint] | [advance/investigate/defer/enable locally] |
+
+- **Selection decision:** [select candidate / investigate before selecting / defer selection]
+- **Selected candidate:** [workflow name or none]
+- **Selection rationale:** [comparison evidence, constraints, and trade-off]
+- **Selection decision owner:** [name and role]
+- **Selection date:** [YYYY-MM-DD]
+
+## Candidate recommendation
 
 - **Decision:** [advance / investigate / defer / enable locally]
 - **Decision owner:** [name and role]
@@ -82,7 +97,8 @@ Score each criterion 1–5. These are starting heuristics for comparison, not in
 
 ## Completion checks
 
-- [ ] The workflow, affected users, business outcome owner, and first wedge are named.
+- [ ] Candidate workflows are compared in the ranking summary, and the selection decision has a named owner.
+- [ ] The selected workflow, affected users, business outcome owner, and first wedge are named.
 - [ ] Every score cites evidence or is explicitly marked as an assumption with a test.
 - [ ] Safety, data, integration, and adoption constraints have accountable owners.
 - [ ] The decision, decision owner, next evidence gate, and failure path are recorded.

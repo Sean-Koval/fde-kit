@@ -11,7 +11,7 @@ Use during [Discover](../stages/01-discover/README.md); refine it through [Frame
 ## Instructions
 
 1. Observe operators completing representative work; collect artifacts and system records alongside interviews.
-2. Trace one case per row from trigger through outcome, including waits, rework, decisions, and exceptions.
+2. Create one trace document per observed case; use each current-state row for a workflow step from trigger through outcome, including waits, rework, decisions, and exceptions.
 3. Mark the evidence that justified each decision, the system that holds state, and the person accountable for the result.
 4. Validate the trace with an operator and a second evidence source; flag contradictions and unknowns.
 5. Use the trace to select a bounded improvement target and to define what must remain under human or deterministic control.

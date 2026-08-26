@@ -43,13 +43,13 @@ A reviewable boundary contract that makes ownership, controls, evidence, escalat
 
 ## Responsibility matrix
 
-| Responsibility | AI role | Software role | Human role | Required evidence | Control and permission | Escalation trigger | Failure behavior / rollback | Accountable owner |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Interpret [input] | [extract/classify/recommend or none] | [schema parsing or none] | [resolve ambiguity] | [source spans, record IDs] | [allowed sources] | [missing/conflicting evidence] | [abstain and queue review] | [name] |
-| Validate [condition] | [semantic check or none] | [rule, range, duplicate, permission check] | [policy override] | [rule result and rationale] | [policy version] | [rule conflict or high consequence] | [block action; retain prior state] | [name] |
-| Decide [route] | [recommendation and confidence] | [threshold routing] | [accountable approval] | [inputs, rationale, approval] | [decision limits] | [low confidence or threshold breach] | [send to review queue] | [name] |
-| Act [system change] | [bounded tool-call proposal or none] | [authorized API call and idempotency] | [approve/perform sensitive action] | [request, response, audit ID] | [least privilege and allowlist] | [permission, policy, or rollback uncertainty] | [stop action; compensate or restore] | [name] |
-| Recover [failure] | [summarize trace] | [retry, fallback, restore state] | [incident command or exception decision] | [trace, incident record] | [kill switch] | [repeated failure or harm signal] | [disable automation; use manual path] | [name] |
+| Responsibility | AI role | Software role | System of record / authoritative state | Human role | Required evidence | Control and permission | Escalation trigger | Failure behavior / rollback | Accountable owner |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Interpret [input] | [extract/classify/recommend or none] | [schema parsing or none] | [source system and record ID] | [resolve ambiguity] | [source spans, record IDs] | [allowed sources] | [missing/conflicting evidence] | [abstain and queue review] | [name] |
+| Validate [condition] | [semantic check or none] | [rule, range, duplicate, permission check] | [policy or transaction record] | [policy override] | [rule result and rationale] | [policy version] | [rule conflict or high consequence] | [block action; retain prior state] | [name] |
+| Decide [route] | [recommendation and confidence] | [threshold routing] | [decision and approval record] | [accountable approval] | [inputs, rationale, approval] | [decision limits] | [low confidence or threshold breach] | [send to review queue] | [name] |
+| Act [system change] | [bounded tool-call proposal or none] | [authorized API call and idempotency] | [authoritative application or ledger state] | [approve/perform sensitive action] | [request, response, audit ID] | [least privilege and allowlist] | [permission, policy, or rollback uncertainty] | [stop action; compensate or restore] | [name] |
+| Recover [failure] | [summarize trace] | [retry, fallback, restore state] | [incident and restored-state record] | [incident command or exception decision] | [trace, incident record] | [kill switch] | [repeated failure or harm signal] | [disable automation; use manual path] | [name] |
 
 ## Approval and open decisions
 
@@ -62,5 +62,5 @@ A reviewable boundary contract that makes ownership, controls, evidence, escalat
 
 - [ ] Every consequential responsibility has an accountable human owner, not only an AI or system label.
 - [ ] Each AI or automated action has evidence requirements, permission limits, escalation criteria, and a safe failure behavior.
-- [ ] Deterministic validation and systems of record are named where state or policy must be enforced.
+- [ ] Deterministic validation and the system of record or authoritative state are named where state or policy must be enforced.
 - [ ] Business, technical, and risk/control approvals are recorded or explicitly open before deployment.

@@ -41,6 +41,13 @@ A versioned evaluation record with release criteria, results, failure analysis, 
 - **Scope:** [traffic, users, workflow state, and exclusions]
 - **Rollback target and owner:** [last known safe version; name]
 
+## Reproducibility metadata
+
+- **Case-set/version ID:** [immutable identifier and version]
+- **Sample-selection method and count:** [how cases were selected, inclusion/exclusion criteria, and number of cases]
+- **Grader/rubric version:** [rubric, deterministic checks, or grader implementation version]
+- **Evaluation run metadata:** [run ID, date/time, executor, environment, and random seed or other run settings]
+
 ## Outcome criteria
 
 | Criterion | Definition | Grader and evidence | Threshold | Failure handling | Owner |
@@ -74,5 +81,6 @@ A versioned evaluation record with release criteria, results, failure analysis, 
 
 - [ ] Cases cover normal work, consequential exceptions, policy-sensitive cases, and known failures.
 - [ ] Every case specifies a system outcome, required evidence, and valid human-review or abstention behavior.
+- [ ] Case-set/version ID, sample-selection method and count, grader/rubric version, and evaluation-run metadata make the result reproducible.
 - [ ] Thresholds, graders, system version, release decision, and rollback target have named owners.
 - [ ] Failures are classified, assigned, and added to regression coverage when meaningful.
