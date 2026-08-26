@@ -26,7 +26,12 @@ The lifecycle is a guide, not a one-way conveyor belt. New evidence can require 
 
 ## Current release
 
-The skills, toolkit, and examples sections currently define curated catalogs and contribution contracts. Substantive guides, reusable artifacts, and worked engagements will be added only when they meet the repository quality bar.
+This release provides a complete AI implementation path:
+
+- The [AI Implementation Field Playbook](learning/presentations/fde-overview.html) explains the operating model.
+- Four [cross-stage skill guides](skills/README.md) teach workflow discovery, system boundaries, evaluation and rollout, and durable adoption.
+- Seven [field toolkit artifacts](toolkit/README.md) provide copy-ready working documents from opportunity selection through the business case.
+- The fictional [AI-assisted invoice-intake engagement](examples/invoice-intake-ai/README.md) shows every stage, skill, and artifact working together.
 
 ### Stage playbook
 
@@ -51,7 +56,9 @@ The skills, toolkit, and examples sections currently define curated catalogs and
 
 1. Use the [engagement lifecycle](learning/engagement-lifecycle.md) to identify the current stage and its expected transition.
 2. Ground decisions in the [operating principles](learning/operating-principles.md).
-3. Use the [stage playbook](stages/README.md) for current engagement guidance. Consult the [skills](skills/README.md), [toolkit](toolkit/README.md), and [examples](examples/README.md) indexes for their curated catalogs and contribution contracts; use a guide, artifact, or worked engagement only when it has been added.
+3. Use the [stage playbook](stages/README.md) to choose the current work and exit criteria.
+4. Apply the relevant [skill guide](skills/README.md) and copy the matching [toolkit artifact](toolkit/README.md).
+5. Compare the evidence chain with the completed [invoice-intake example](examples/invoice-intake-ai/README.md), while adapting its thresholds and boundaries to the engagement at hand.
 
 ## Contribution quality bar
 
