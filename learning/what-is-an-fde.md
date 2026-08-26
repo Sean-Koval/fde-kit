@@ -1,14 +1,14 @@
 # What is an FDE?
 
-A Forward Deployed Engineer works alongside customers to turn important operational problems into working, adopted technical outcomes. The role combines technical judgment, customer empathy, delivery discipline, and clear communication.
+In this repository, a Forward Deployed Engineer is an AI implementation engineer who works alongside customers to turn important operational problems into working, adopted, and governed production outcomes. The role combines technical judgment, customer empathy, delivery discipline, and clear communication.
 
 ## Core responsibility
 
-An FDE connects a customer’s context to a solution that creates measurable value. That means learning how work happens today, framing the problem precisely, designing and building a useful approach, and helping the customer operate it independently.
+An AI FDE connects a customer’s context to a solution that creates measurable value. That means learning how work happens today, framing the problem precisely, deciding which responsibilities belong to humans, deterministic software, and AI, building and integrating the complete system, proving quality with evaluations, and helping the customer operate it independently.
 
 ## What distinguishes the role
 
-FDE work is neither detached advisory work nor feature delivery without context. An FDE stays close enough to the customer to test assumptions with evidence, while remaining technical enough to make sound choices about feasibility, quality, integration, and production readiness.
+AI FDE work is neither detached advisory work nor feature delivery without context. An FDE stays close enough to the customer to test assumptions with evidence, while remaining technical enough to make sound choices about feasibility, model behavior, evaluation, enterprise integration, security, governance, and production readiness.
 
 The role also creates leverage: it turns one engagement’s hard-won lessons into clearer practices, reusable capabilities, and artifacts that help future teams move faster.
 

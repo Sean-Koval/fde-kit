@@ -15,6 +15,7 @@
       --r-background-color: #080a0d;
       --r-main-font: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       --r-heading-font: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      --r-main-font-size: 32px;
       --r-main-color: #f3f4f6;
       --r-heading-color: #ffffff;
       --r-link-color: #a7f3d0;
@@ -26,67 +27,100 @@
       --warn: #fbbf24;
       --bad: #fca5a5;
       --blue: #bfdbfe;
+      --violet: #ddd6fe;
+      --panel: rgba(255,255,255,.035);
     }
 
-    .reveal { letter-spacing: -0.026em; }
+    .reveal { letter-spacing: -0.018em; }
     .reveal .slides { text-align: left; }
-    .reveal .slides section { padding: 0 10px; }
-    .reveal h1, .reveal h2, .reveal h3 { text-transform: none; font-weight: 730; line-height: .95; }
-    .reveal h1 { font-size: 2.72em; max-width: 1050px; }
-    .reveal h2 { font-size: 1.95em; max-width: 1050px; }
-    .reveal h3 { font-size: 1.02em; color: var(--accent); margin-bottom: .45em; }
-    .reveal p, .reveal li { font-size: .72em; line-height: 1.32; color: #e5e7eb; }
-    .reveal ul { margin-left: 0; padding-left: 1.0em; }
-    .reveal li { margin: .32em 0; }
+    .reveal .slides section { box-sizing: border-box; height: 100%; padding: 24px 30px; }
+    .reveal h1, .reveal h2, .reveal h3 { text-transform: none; font-weight: 730; line-height: 1.02; }
+    .reveal h1 { font-size: 46pt; max-width: 1060px; margin: 0 0 18px; }
+    .reveal h2 { font-size: 30pt; max-width: 1110px; margin: 0 0 14px; }
+    .reveal h3 { font-size: 16pt; color: var(--accent); margin: 0 0 8px; }
+    .reveal p, .reveal li { font-size: 13.5pt; line-height: 1.32; color: #e5e7eb; }
+    .reveal p { margin: 0 0 10px; }
+    .reveal ul { margin: 0; padding-left: 22px; }
+    .reveal li { margin: 5px 0; }
     .reveal strong { color: #fff; font-weight: 760; }
+    .reveal a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 3px; }
     .muted { color: var(--muted) !important; }
     .dim { color: var(--dim) !important; }
-    .small { font-size: .46em !important; color: var(--muted) !important; line-height: 1.42 !important; }
-    .eyebrow { color: var(--accent); font-size: .32em; text-transform: uppercase; letter-spacing: .14em; font-weight: 780; margin-bottom: 1.1em; }
-    .rule { height: 1px; background: var(--line); width: 100%; margin: 1.05em 0 .82em; }
-    .two { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25em; align-items: start; }
-    .three { display: grid; grid-template-columns: repeat(3, 1fr); gap: .8em; align-items: start; }
-    .four { display: grid; grid-template-columns: repeat(4, 1fr); gap: .62em; align-items: start; }
-    .splitline { display: grid; grid-template-columns: .95fr 1.05fr; gap: 1.25em; align-items: center; }
-    .card { border-top: 1px solid var(--line); padding-top: .62em; }
-    .card p { font-size: .48em; color: var(--muted); }
-    .label { font-size: .42em; color: var(--muted); text-transform: uppercase; letter-spacing: .12em; font-weight: 760; }
-    .bigword { font-size: 1.22em; color: #fff; font-weight: 780; line-height: .98; margin-top: .15em; }
-    .quote { font-size: 1.02em; line-height: 1.14; max-width: 960px; color: #f9fafb; }
+    .small { font-size: 10pt !important; color: var(--muted) !important; line-height: 1.38 !important; }
+    .micro { font-size: 8.5pt !important; color: var(--muted) !important; line-height: 1.3 !important; }
+    .eyebrow { color: var(--accent) !important; font-size: 9pt !important; text-transform: uppercase; letter-spacing: 2px; font-weight: 780; margin-bottom: 12px !important; }
+    .lead { font-size: 18pt !important; line-height: 1.24 !important; max-width: 970px; }
+    .quote { font-size: 21pt !important; line-height: 1.18 !important; max-width: 1040px; color: #f9fafb; }
+    .rule { height: 1px; background: var(--line); width: 100%; margin: 12px 0 16px; }
+    .card { border-top: 1px solid var(--line); padding: 12px 12px 0 0; }
+    .card p { font-size: 11pt; color: var(--muted); }
+    .label { font-size: 9pt !important; color: var(--muted) !important; text-transform: uppercase; letter-spacing: 1.5px; font-weight: 760; }
+    .bigword { font-size: 21pt !important; color: #fff; font-weight: 780; line-height: 1; margin-top: 3px !important; }
     .check { color: var(--accent); font-weight: 840; }
     .warn { color: var(--warn); font-weight: 840; }
     .bad { color: var(--bad); font-weight: 840; }
     .blue { color: var(--blue); font-weight: 840; }
-    .thin { font-weight: 460; color: var(--muted); }
-    .matrix { width: 100%; border-collapse: collapse; margin-top: .72em; }
-    .matrix th, .matrix td { border-top: 1px solid var(--softline); padding: .46em .52em; vertical-align: top; }
-    .matrix th { color: var(--accent); font-size: .40em; text-transform: uppercase; letter-spacing: .1em; }
-    .matrix td { font-size: .48em; color: #e5e7eb; line-height: 1.28; }
-    .matrix td.muted-cell { color: var(--muted); }
-    .flow { display: grid; grid-template-columns: repeat(3, 1fr); gap: .72em; margin-top: 1.0em; }
-    .flow-item { border-top: 1px solid var(--line); padding-top: .65em; min-height: 120px; }
-    .num { color: var(--accent); font-size: .42em; font-weight: 840; margin-bottom: .25em; }
-    .step-title { font-size: .66em; font-weight: 770; color: #fff; margin-bottom: .22em; }
-    .step-copy { font-size: .44em; color: var(--muted); line-height: 1.34; }
-    .signal-grid { display: grid; grid-template-columns: 1.1fr .9fr; gap: 1.2em; align-items: start; }
-    .score { display: grid; grid-template-columns: repeat(5, 1fr); gap: .42em; margin-top: .72em; }
-    .score div { border-top: 1px solid var(--line); padding-top: .45em; }
-    .score .n { font-size: 1.02em; color: #fff; font-weight: 800; }
-    .score .t { font-size: .36em; color: var(--muted); line-height: 1.28; }
-    .stack { display: grid; grid-template-columns: .8fr 1.2fr; gap: 1em; align-items: center; margin-top: .6em; }
-    .stack .lane { border-top: 1px solid var(--line); padding-top: .6em; }
-    .stack .lane-title { font-size: .68em; color: #fff; font-weight: 780; }
-    .stack .lane-copy { font-size: .46em; color: var(--muted); line-height: 1.32; }
-    .ladder { display: grid; grid-template-columns: repeat(5, 1fr); gap: .45em; margin-top: .9em; }
-    .rung { border-top: 1px solid var(--line); padding-top: .52em; }
-    .rung .step-title { font-size: .54em; }
-    .rung .step-copy { font-size: .38em; }
-    .artifact-list li { list-style: none; margin-left: -1em; }
-    .artifact-list li::before { content: "→"; color: var(--accent); margin-right: .5em; }
-    .footer { position: fixed; left: 28px; bottom: 20px; color: rgba(255,255,255,.32); font-size: 12px; letter-spacing: .02em; }
-    code { color: var(--accent); background: rgba(167,243,208,.07); padding: .05em .2em; border-radius: 5px; }
+    .panel { background: var(--panel); border: 1px solid var(--softline); border-radius: 12px; padding: 14px 16px; }
+    .panel p:last-child { margin-bottom: 0; }
+    .node { min-height: 78px; border-top: 2px solid var(--line); padding: 9px 8px 0 0; }
+    .node.accent { border-color: var(--accent); }
+    .node.blue-node { border-color: var(--blue); }
+    .node.warn-node { border-color: var(--warn); }
+    .node.violet-node { border-color: var(--violet); }
+    .node h3 { color: #fff; font-size: 13pt; margin-bottom: 5px; }
+    .node p { color: var(--muted); font-size: 10pt; line-height: 1.3; }
+    .axis-label { color: var(--muted) !important; font-size: 8.5pt !important; text-transform: uppercase; letter-spacing: 1.4px; }
+    .heatmap { position: relative; display: grid; grid-template-columns: repeat(2, 1fr); grid-template-rows: repeat(2, 1fr); gap: 6px; height: 390px; margin: 10px 32px 18px 42px; }
+    .quadrant { border: 1px solid var(--softline); padding: 14px; display: flex; flex-direction: column; justify-content: space-between; }
+    .quadrant h3 { color: #fff; font-size: 14pt; }
+    .quadrant p { font-size: 10pt; color: var(--muted); }
+    .quadrant.best { border-color: rgba(167,243,208,.55); background: rgba(167,243,208,.08); }
+    .heatmap-x { position: absolute; left: 43%; bottom: -30px; }
+    .heatmap-y { position: absolute; left: -74px; top: 47%; transform: rotate(-90deg); }
+    .loop { width: 570px; height: 420px; margin: 0 auto; position: relative; border: 1px solid var(--softline); border-radius: 50%; }
+    .loop-node { position: absolute; width: 176px; text-align: center; }
+    .loop-node h3 { color: #fff; font-size: 14pt; }
+    .loop-node p { font-size: 10pt; color: var(--muted); }
+    .loop-top { top: 18px; left: 197px; }
+    .loop-right { top: 168px; right: -30px; }
+    .loop-bottom { bottom: 10px; left: 197px; }
+    .loop-left { top: 168px; left: -30px; }
+    .loop-center { position: absolute; inset: 148px 155px; border-radius: 50%; background: rgba(167,243,208,.09); display: flex; align-items: center; justify-content: center; text-align: center; padding: 14px; }
+    .loop-center p { font-size: 12pt; color: var(--accent); font-weight: 760; }
+    .swimlane { display: grid; grid-template-columns: 130px repeat(5, 1fr); gap: 5px; margin-top: 12px; }
+    .swimlane .lane-name, .swimlane .lane-cell { min-height: 79px; border-top: 1px solid var(--softline); padding: 8px; }
+    .swimlane .lane-name { display: flex; align-items: center; }
+    .swimlane .lane-name p { color: var(--accent); font-size: 10pt; font-weight: 780; }
+    .swimlane .lane-cell p { font-size: 9.5pt; line-height: 1.23; }
+    .swimlane .active { background: var(--panel); border-color: var(--line); }
+    .layer { display: grid; grid-template-columns: 160px 1fr; gap: 12px; border-top: 1px solid var(--line); padding: 9px 0; }
+    .layer h3 { color: var(--accent); font-size: 12pt; }
+    .layer p { font-size: 10.5pt; color: var(--muted); margin: 0; }
+    .matrix { width: 100%; border-collapse: collapse; margin-top: 8px; }
+    .matrix th, .matrix td { border-top: 1px solid var(--softline); padding: 8px 9px; vertical-align: top; }
+    .matrix th { color: var(--accent); font-size: 9pt; text-transform: uppercase; letter-spacing: 1.2px; }
+    .matrix td { font-size: 10pt; color: #e5e7eb; line-height: 1.25; }
+    .flywheel { display: grid; grid-template-columns: repeat(5, 1fr); gap: 9px; align-items: stretch; margin: 44px 0 24px; }
+    .flywheel .node { position: relative; }
+    .flywheel .node:not(:last-child)::after { content: "→"; position: absolute; right: -10px; top: 24px; color: var(--accent); }
+    .gates { display: grid; grid-template-columns: repeat(5, 1fr); gap: 8px; margin-top: 22px; }
+    .gate { border-top: 2px solid var(--line); padding: 10px 8px 0 0; }
+    .gate h3 { color: #fff; font-size: 13pt; }
+    .gate p { font-size: 9.5pt; color: var(--muted); }
+    .gate .gate-num { font-size: 9pt; color: var(--accent); font-weight: 800; text-transform: uppercase; letter-spacing: 1px; }
+    .artifact { border-left: 2px solid var(--accent); padding-left: 10px; }
+    .artifact h3 { color: #fff; font-size: 12pt; }
+    .artifact p { color: var(--muted); font-size: 9.5pt; }
+    .map-row { display: grid; grid-template-columns: 138px 152px 1fr; gap: 10px; align-items: center; border-top: 1px solid var(--softline); padding: 7px 0; }
+    .map-row p { margin: 0; font-size: 10pt; }
+    .map-row .map-operating { color: #fff; font-weight: 720; }
+    .map-row .map-lifecycle { color: var(--blue); }
+    .map-row .map-artifact { color: var(--muted); }
+    .source-list li { font-size: 11pt; margin: 9px 0; }
+    .footer { position: fixed; left: 28px; bottom: 15px; }
+    .footer p { color: rgba(255,255,255,.32); font-size: 8pt; letter-spacing: .4px; margin: 0; }
     @media (max-width: 900px) {
-      .two, .three, .four, .splitline, .flow, .signal-grid, .score, .stack, .ladder { grid-template-columns: 1fr; }
+      .heatmap, .swimlane, .flywheel, .gates, .map-row { display: block; height: auto; }
     }
   </style>
 </head>
@@ -94,275 +128,335 @@
   <div class="reveal">
     <div class="slides">
 
-      <section data-background-color="#080a0d">
-        <div class="eyebrow">Forward Deployed Engineering</div>
+      <section id="ai-fde-field-playbook" data-background-color="#080a0d">
+        <p class="eyebrow">Forward Deployed Engineering</p>
         <h1>AI implementation is field work.</h1>
-        <p class="muted" style="max-width: 800px; margin-top: 1.15em;">The job is not “add an agent.” The job is to find operational leverage, decide where AI belongs, prove it, and land it inside the team.</p>
-        <aside class="notes">Tighter version of the deck. Less role-definition repetition; more operating playbook.</aside>
-      </section>
-
-      <section>
-        <div class="eyebrow">Thesis</div>
-        <h2>The model is not the moat. Deployment is.</h2>
+        <p class="lead muted">Own the path from operational pain to a production system the customer adopts, operates, and improves.</p>
         <div class="rule"></div>
-        <div class="three">
-          <div class="card"><div class="label">01</div><div class="bigword">Audit</div><p>Find where work actually happens: volume, delays, exceptions, hidden judgment, and money-at-risk.</p></div>
-          <div class="card"><div class="label">02</div><div class="bigword">Decide</div><p>Classify every step as human, deterministic software, AI endpoint, or a controlled hybrid.</p></div>
-          <div class="card"><div class="label">03</div><div class="bigword">Prove</div><p>Build evals, guardrails, traces, and staged rollout before asking the business to trust it.</p></div>
+        <div style="display: grid; grid-template-columns: repeat(7, 1fr); gap: 8px; margin-top: 30px;">
+          <div class="node accent"><p class="label">01</p><h3>Find leverage</h3></div>
+          <div class="node"><p class="label">02</p><h3>Map reality</h3></div>
+          <div class="node"><p class="label">03</p><h3>Design the boundary</h3></div>
+          <div class="node"><p class="label">04</p><h3>Prove quality</h3></div>
+          <div class="node"><p class="label">05</p><h3>Land production</h3></div>
+          <div class="node"><p class="label">06</p><h3>Transfer ownership</h3></div>
+          <div class="node"><p class="label">07</p><h3>Compound learning</h3></div>
         </div>
-        <aside class="notes">This compresses the previous definition + loop slides into one backbone.</aside>
+        <p class="small" style="margin-top: 22px;">Operating model: Find leverage → Map reality → Design the boundary → Prove quality → Land production → Transfer ownership → Compound learning</p>
+        <aside class="notes"><p>Open with the complete engagement, not with a model demo. The FDE owns deployment outcomes and the learning loop around them.</p></aside>
       </section>
 
-      <section>
-        <div class="eyebrow">Where to look</div>
-        <h2>Start with volume, not vibes.</h2>
+      <section id="role-contract">
+        <p class="eyebrow">Role contract</p>
+        <h2>Own the outcome end to end.</h2>
         <div class="rule"></div>
-        <div class="signal-grid">
-          <div>
-            <h3>Find the teams drowning in repeat work</h3>
-            <ul>
-              <li>High ticket / email / case volume</li>
-              <li>Repeated copying between systems</li>
-              <li>Backlogs, SLA misses, manual QA queues</li>
-              <li>Expensive specialists doing clerical work</li>
-              <li>Lots of rework from inconsistent inputs</li>
-              <li>Decision latency that blocks revenue or operations</li>
-            </ul>
-          </div>
-          <div>
-            <h3>Do not begin with</h3>
-            <ul>
-              <li>“Where can we use agents?”</li>
-              <li>Executive anecdotes only</li>
-              <li>One-off workflows with no owner</li>
-              <li>Processes where success cannot be measured</li>
-            </ul>
-          </div>
+        <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin-top: 22px;">
+          <div class="card"><p class="label">Discover</p><p class="bigword">Frame the work</p><p>Embed with operators, quantify pain, scope the wedge, and name the decision owner.</p></div>
+          <div class="card"><p class="label">Deliver</p><p class="bigword">Build the system</p><p>Architect, code, integrate, evaluate, secure, and ship the complete workflow.</p></div>
+          <div class="card"><p class="label">Operate</p><p class="bigword">Make it durable</p><p>Instrument quality, cost, latency, incidents, review queues, and rollback.</p></div>
+          <div class="card"><p class="label">Compound</p><p class="bigword">Create leverage</p><p>Drive adoption, transfer ownership, feed product learning, and expand from evidence.</p></div>
         </div>
-        <aside class="notes">The FDE starts like an operator: where is volume, pain, and measurable economic drag?</aside>
+        <div class="panel" style="margin-top: 28px;">
+          <p class="lead"><strong>Success = production adoption + measurable workflow impact + customer-owned operations + eval-driven product feedback.</strong></p>
+        </div>
+        <p class="small" style="margin-top: 16px;">Synthesis of current role descriptions from OpenAI, Palantir, Stripe, and Scale AI; primary links on the final slide.</p>
+        <aside class="notes"><p>Emphasize that the role spans technical scoping, direct implementation, adoption, Day 2 operations, and feedback into the product roadmap.</p></aside>
       </section>
 
-      <section>
-        <div class="eyebrow">Project selection</div>
-        <h2>Score opportunities before writing code.</h2>
-        <div class="rule"></div>
-        <p class="quote">A good FDE wedge is <strong>high-volume, measurable, owned, and messy enough that the current process leaks value.</strong></p>
-        <div class="score">
-          <div><div class="n">5</div><div class="t">Volume: weekly cases, users, dollars touched</div></div>
-          <div><div class="n">4</div><div class="t">Pain: backlog, rework, cycle time, escalation</div></div>
-          <div><div class="n">4</div><div class="t">Measurable: clear pass/fail and baseline</div></div>
-          <div><div class="n">3</div><div class="t">Feasible: data access, APIs, permissions</div></div>
-          <div><div class="n">3</div><div class="t">Owner: champion + Day 2 operator</div></div>
+      <section id="opportunity-heatmap">
+        <p class="eyebrow">Find leverage · Opportunity scorecard</p>
+        <h2>Choose the workflow, not the demo.</h2>
+        <div class="heatmap">
+          <div class="quadrant">
+            <div><h3>Investigate</h3><p>Material impact, but uncertain AI fit or inaccessible data.</p></div>
+            <p>Clarify feasibility before committing.</p>
+          </div>
+          <div class="quadrant best">
+            <div><h3>Start here</h3><p>High volume, measurable pain, representative data, bounded risk, and a named owner.</p></div>
+            <p><strong>Best first production wedge</strong></p>
+          </div>
+          <div class="quadrant">
+            <div><h3>Defer</h3><p>Low economic or operational consequence even if AI performs well.</p></div>
+            <p>Keep as learning, not a deployment priority.</p>
+          </div>
+          <div class="quadrant">
+            <div><h3>Enable locally</h3><p>Useful fit, but narrow scale or weak ownership.</p></div>
+            <p>Offer a lightweight tool or capability.</p>
+          </div>
+          <p class="axis-label heatmap-x">AI and delivery fit →</p>
+          <p class="axis-label heatmap-y">Workflow impact →</p>
         </div>
-        <p class="small" style="margin-top: 1em;">Rule of thumb: if volume is low or ownership is absent, do not spend FDE calories there yet.</p>
-        <aside class="notes">Use this to prioritize projects/teams/processes.</aside>
+        <p class="small"><strong>Starting heuristic:</strong> score volume, pain, measurability, feasibility, risk, and ownership before writing production code.</p>
+        <aside class="notes"><p>The Opportunity scorecard makes the prioritization argument inspectable. The upper-right quadrant earns FDE attention first.</p></aside>
       </section>
 
-      <section>
-        <div class="eyebrow">Embed</div>
-        <h2>Sit with the team until the real workflow appears.</h2>
-        <div class="rule"></div>
-        <div class="two">
-          <div>
-            <h3>Observe</h3>
-            <ul>
-              <li>Watch 5–10 real cases end to end.</li>
-              <li>Ask them to narrate every click, copy, lookup, wait, and handoff.</li>
-              <li>Capture exceptions as first-class steps, not footnotes.</li>
-              <li>Compare what people say to system logs and artifacts.</li>
-            </ul>
-          </div>
-          <div>
-            <h3>Extract what lives in their head</h3>
-            <ul>
-              <li>“When do you pause and ask someone?”</li>
-              <li>“What inputs are usually wrong?”</li>
-              <li>“Which field would be expensive if wrong?”</li>
-              <li>“What do you check that is not in the SOP?”</li>
-            </ul>
-          </div>
+      <section id="observation-loop">
+        <p class="eyebrow">Map reality · Workflow trace</p>
+        <h2>Observe until the exceptions become the workflow.</h2>
+        <div class="loop">
+          <div class="loop-node loop-top"><h3>Observe</h3><p>Watch real cases, clicks, queues, waits, and handoffs.</p></div>
+          <div class="loop-node loop-right"><h3>Trace</h3><p>Record systems, evidence, decisions, and hidden work.</p></div>
+          <div class="loop-node loop-bottom"><h3>Challenge</h3><p>Ask what breaks, costs money, or triggers escalation.</p></div>
+          <div class="loop-node loop-left"><h3>Validate</h3><p>Compare the story with logs, artifacts, and another case.</p></div>
+          <div class="loop-center"><p>Workflow trace<br>facts over process theater</p></div>
         </div>
-        <aside class="notes">This incorporates the user’s point: users often cannot articulate the edge cases until you watch real work.</aside>
+        <p class="small" style="text-align: center; margin-top: 8px;">Repeat until the map explains both the happy path and the operational edge cases.</p>
+        <aside class="notes"><p>Ask operators to show, not tell. Re-observation is how undocumented judgment and exception paths become explicit design inputs.</p></aside>
       </section>
 
-      <section>
-        <div class="eyebrow">Field interview</div>
-        <h2>Questions that surface the edge cases.</h2>
+      <section id="workflow-swimlane">
+        <p class="eyebrow">Design the boundary · Representative workflow</p>
+        <h2>Invoice intake is a system, not a prompt.</h2>
+        <div class="swimlane">
+          <div class="lane-name"><p>Lane</p></div>
+          <div class="lane-cell"><p class="label">1 · Receive</p></div>
+          <div class="lane-cell"><p class="label">2 · Read</p></div>
+          <div class="lane-cell"><p class="label">3 · Check</p></div>
+          <div class="lane-cell"><p class="label">4 · Decide</p></div>
+          <div class="lane-cell"><p class="label">5 · Act</p></div>
+
+          <div class="lane-name"><p>Human operator</p></div>
+          <div class="lane-cell active"><p>Submits invoice and context.</p></div>
+          <div class="lane-cell"></div>
+          <div class="lane-cell"></div>
+          <div class="lane-cell active"><p>Reviews exceptions, new vendors, and high-risk amounts.</p></div>
+          <div class="lane-cell"></div>
+
+          <div class="lane-name"><p>AI</p></div>
+          <div class="lane-cell"></div>
+          <div class="lane-cell active"><p>Extracts fields, cites evidence, classifies expense, flags ambiguity.</p></div>
+          <div class="lane-cell"></div>
+          <div class="lane-cell active"><p>Recommends route with confidence and rationale.</p></div>
+          <div class="lane-cell"></div>
+
+          <div class="lane-name"><p>Software</p></div>
+          <div class="lane-cell active"><p>Creates case, stores source, records identity.</p></div>
+          <div class="lane-cell"></div>
+          <div class="lane-cell active"><p>Validates schema, totals, PO match, duplicates, and permissions.</p></div>
+          <div class="lane-cell"></div>
+          <div class="lane-cell active"><p>Writes approved data, queues work, and logs the action.</p></div>
+
+          <div class="lane-name"><p>Control path</p></div>
+          <div class="lane-cell"><p class="micro">Trace ID</p></div>
+          <div class="lane-cell"><p class="micro">Source spans</p></div>
+          <div class="lane-cell"><p class="micro">Policy checks</p></div>
+          <div class="lane-cell"><p class="micro">Approval record</p></div>
+          <div class="lane-cell"><p class="micro">Audit + rollback</p></div>
+        </div>
+        <p class="small" style="margin-top: 12px;">Default boundary: AI proposes; deterministic software constrains; accountable humans approve costly or irreversible decisions.</p>
+        <aside class="notes"><p>Use the swimlane to show that AI is one participant in an enterprise workflow. Evidence, controls, state, and ownership are part of the design.</p></aside>
+      </section>
+
+      <section id="enterprise-architecture">
+        <p class="eyebrow">Technical delivery · Enterprise integration</p>
+        <h2>Land AI inside the customer’s control plane.</h2>
+        <div class="panel" style="margin-top: 14px;">
+          <div class="layer"><h3>Experience</h3><p>Existing inbox, case queue, operations console, approval surface, and user feedback.</p></div>
+          <div class="layer"><h3>Workflow</h3><p>State machine, deterministic business rules, human review, retries, idempotency, and rollback.</p></div>
+          <div class="layer"><h3>AI runtime</h3><p>Model routing, retrieval, prompts, tool calls, structured outputs, confidence signals, and traces.</p></div>
+          <div class="layer"><h3>Enterprise systems</h3><p>ERP, CRM, document store, identity provider, policy services, data warehouse, and event bus.</p></div>
+          <div class="layer"><h3>Platform controls</h3><p>Authentication, authorization, secrets, encryption, data residency, observability, cost, and incident response.</p></div>
+        </div>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-top: 18px;">
+          <p class="small"><strong>Integration contract:</strong> schemas, APIs, permissions, failure modes, latency budgets, and system owners.</p>
+          <p class="small"><strong>Governance contract:</strong> allowed data, retention, model use, review policy, audit evidence, and change approval.</p>
+        </div>
+        <aside class="notes"><p>The enterprise architecture is layered so the team can reason separately about user experience, workflow state, AI behavior, systems of record, and cross-cutting controls.</p></aside>
+      </section>
+
+      <section id="responsibility-matrix">
+        <p class="eyebrow">Design the boundary · Responsibility matrix</p>
+        <h2>Assign work to the least fragile owner.</h2>
         <table class="matrix">
-          <thead><tr><th>Ask</th><th>Why it matters</th><th>Artifact</th></tr></thead>
+          <thead><tr><th>Work</th><th>AI</th><th>Software</th><th>Human</th><th>Escalation trigger</th></tr></thead>
           <tbody>
-            <tr><td><strong>Show me the last 10 cases.</strong></td><td>Prevents abstract process theater.</td><td>Case sample set</td></tr>
-            <tr><td><strong>Which cases took longest?</strong></td><td>Finds bottlenecks and ambiguity.</td><td>Delay map</td></tr>
-            <tr><td><strong>Where do errors usually enter?</strong></td><td>Identifies validation and guardrail points.</td><td>Failure taxonomy</td></tr>
-            <tr><td><strong>What decisions require accountability?</strong></td><td>Marks human-owned steps.</td><td>HITL map</td></tr>
-            <tr><td><strong>What would you never let AI do alone?</strong></td><td>Surfaces trust boundaries early.</td><td>Autonomy policy</td></tr>
+            <tr><td><strong>Interpret</strong></td><td>Read messy language, images, and context.</td><td>Parse stable structures and enforce schemas.</td><td>Resolve ambiguity with business consequence.</td><td>Missing evidence or conflicting sources.</td></tr>
+            <tr><td><strong>Validate</strong></td><td>Check semantic consistency and policy meaning.</td><td>Check totals, IDs, ranges, duplicates, and permissions.</td><td>Accept exceptions and policy overrides.</td><td>Rule conflict or money-at-risk.</td></tr>
+            <tr><td><strong>Decide</strong></td><td>Recommend route with cited rationale.</td><td>Apply explicit routing and threshold rules.</td><td>Own accountable, novel, or irreversible decisions.</td><td>Low confidence or high consequence.</td></tr>
+            <tr><td><strong>Act</strong></td><td>Prepare bounded tool calls.</td><td>Execute authorized APIs and record state.</td><td>Approve or perform sensitive actions.</td><td>Permission, policy, or rollback uncertainty.</td></tr>
           </tbody>
         </table>
-        <aside class="notes">This slide replaces several repeated discovery/checklist slides with a sharper interview artifact.</aside>
-      </section>
-
-      <section>
-        <div class="eyebrow">Workflow decomposition</div>
-        <h2>The solution is usually all three.</h2>
-        <div class="rule"></div>
-        <div class="stack">
-          <div>
-            <p class="quote"><strong>Human + software + AI</strong> is the default enterprise pattern.</p>
-            <p class="muted">The FDE’s job is to assign the right responsibility to each layer.</p>
-          </div>
-          <div>
-            <div class="lane"><div class="lane-title">Human</div><div class="lane-copy">Owns judgment, accountability, approvals, negotiations, and costly irreversible decisions.</div></div>
-            <div class="lane"><div class="lane-title">Traditional software</div><div class="lane-copy">Owns deterministic rules, schemas, validation, workflow state, queues, permissions, and audit logs.</div></div>
-            <div class="lane"><div class="lane-title">AI endpoint / agent</div><div class="lane-copy">Owns language understanding, extraction, summarization, recommendation, variable routing, and tool-assisted reasoning.</div></div>
-          </div>
+        <div class="panel" style="margin-top: 18px;">
+          <p><strong>The matrix is a governance decision.</strong> Every row needs an owner, evidence requirement, failure behavior, and review path before production.</p>
         </div>
-        <aside class="notes">This is the major reframing: do not decide “AI or not.” Decide the mixed architecture.</aside>
+        <aside class="notes"><p>Do not ask whether the whole workflow should use AI. Decompose it and assign each decision according to ambiguity, determinism, consequence, and reversibility.</p></aside>
       </section>
 
-      <section>
-        <div class="eyebrow">Decision matrix</div>
-        <h2>Assign each step to the least fragile owner.</h2>
-        <table class="matrix">
-          <thead><tr><th>Workflow step</th><th>Use AI when…</th><th>Use software when…</th><th>Keep human when…</th></tr></thead>
+      <section id="evaluation-flywheel">
+        <p class="eyebrow">Prove quality · Evaluation pack</p>
+        <h2>Turn field failures into release evidence.</h2>
+        <div class="flywheel">
+          <div class="node accent"><p class="label">Cases</p><h3>Representative set</h3><p>Common, costly, risky, and adversarial examples.</p></div>
+          <div class="node"><p class="label">Criteria</p><h3>Outcome graders</h3><p>Correctness, evidence, policy, abstention, and workflow result.</p></div>
+          <div class="node warn-node"><p class="label">Analysis</p><h3>Failure taxonomy</h3><p>Model, data, tool, policy, integration, or human-interface cause.</p></div>
+          <div class="node blue-node"><p class="label">Change</p><h3>System revision</h3><p>Prompt, model, retrieval, rule, UX, control, or process update.</p></div>
+          <div class="node violet-node"><p class="label">Release</p><h3>Regression + online</h3><p>Offline gate, production traces, drift, and review burden.</p></div>
+        </div>
+        <div style="display: grid; grid-template-columns: 1.2fr .8fr; gap: 18px;">
+          <div class="panel"><p><strong>Evaluate the system outcome.</strong> A fluent answer can still use the wrong evidence, call the wrong tool, violate policy, or create expensive review work.</p></div>
+          <div class="panel"><p class="small"><strong>Starting heuristic:</strong> begin with 30–50 representative cases, then add every meaningful production failure to the regression set.</p></div>
+        </div>
+        <aside class="notes"><p>The Evaluation pack combines cases, expected outcomes, graders, thresholds, failure analysis, and the release decision. The loop continues after launch.</p></aside>
+      </section>
+
+      <section id="deployment-gates">
+        <p class="eyebrow">Land production · Rollout plan</p>
+        <h2>Autonomy advances only when evidence clears the gate.</h2>
+        <div class="gates">
+          <div class="gate"><p class="gate-num">Gate 0</p><h3>Observe</h3><p>Measure baseline, exception rate, handling time, and business outcome.</p><p class="micro"><strong>Pass:</strong> workflow and owner are known.</p></div>
+          <div class="gate"><p class="gate-num">Gate 1</p><h3>Assist</h3><p>AI drafts or extracts; the operator remains in control.</p><p class="micro"><strong>Pass:</strong> utility exceeds added review burden.</p></div>
+          <div class="gate"><p class="gate-num">Gate 2</p><h3>Shadow</h3><p>Run on live traffic without changing the production outcome.</p><p class="micro"><strong>Pass:</strong> eval and field performance agree.</p></div>
+          <div class="gate"><p class="gate-num">Gate 3</p><h3>Approve</h3><p>AI proposes bounded actions; humans approve exceptions and risk.</p><p class="micro"><strong>Pass:</strong> controls and rollback work.</p></div>
+          <div class="gate"><p class="gate-num">Gate 4</p><h3>Bounded autonomy</h3><p>AI acts only inside monitored permissions, limits, and stop conditions.</p><p class="micro"><strong>Pass:</strong> owner accepts residual risk.</p></div>
+        </div>
+        <div class="panel" style="margin-top: 28px;">
+          <p><strong>Promote, hold, or roll back.</strong> Staying at assist, shadow, or approve can be the highest-value and safest production design.</p>
+        </div>
+        <aside class="notes"><p>The gates are control states, not a maturity contest. Each promotion needs named evidence and an explicit decision owner.</p></aside>
+      </section>
+
+      <section id="security-governance">
+        <p class="eyebrow">Production readiness · Security and governance</p>
+        <h2>No launch without a defensible control story.</h2>
+        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-top: 22px;">
+          <div class="panel"><h3>Identity + action</h3><ul><li>Least-privilege service and user identity</li><li>Tool allowlist and scoped credentials</li><li>Approval for sensitive actions</li></ul></div>
+          <div class="panel"><h3>Data + model</h3><ul><li>Allowed sources and residency</li><li>Retention, redaction, and encryption</li><li>Approved model and vendor terms</li></ul></div>
+          <div class="panel"><h3>Evidence + recovery</h3><ul><li>Traceable inputs, outputs, and tool calls</li><li>Threat model and abuse cases</li><li>Kill switch, rollback, and incident path</li></ul></div>
+        </div>
+        <table class="matrix" style="margin-top: 24px;">
+          <thead><tr><th>Launch gate</th><th>Evidence</th><th>Decision owner</th></tr></thead>
           <tbody>
-            <tr><td><strong>Read / extract</strong></td><td>Inputs are messy docs, emails, chats, PDFs.</td><td>Input is structured and stable.</td><td>Source is ambiguous or legally sensitive.</td></tr>
-            <tr><td><strong>Validate</strong></td><td>Needs semantic checks or policy interpretation.</td><td>Rules are deterministic: schema, ranges, totals, IDs.</td><td>Bad validation can move money or create liability.</td></tr>
-            <tr><td><strong>Decide / route</strong></td><td>Requires context across many unstructured signals.</td><td>Routing rules are explicit and stable.</td><td>Outcome affects customer, contract, compliance, or large spend.</td></tr>
-            <tr><td><strong>Act</strong></td><td>Action is reversible and bounded.</td><td>Action is a standard API call with known parameters.</td><td>Action is irreversible, high-value, or reputation-sensitive.</td></tr>
+            <tr><td>Security</td><td>Threat review, access test, secrets handling, dependency review</td><td>Security and technical owner</td></tr>
+            <tr><td>Governance</td><td>Data policy, model policy, human-review rule, audit record</td><td>Risk or compliance owner</td></tr>
+            <tr><td>Resilience</td><td>Failure injection, fallback, rollback rehearsal, incident runbook</td><td>Day 2 service owner</td></tr>
           </tbody>
         </table>
-        <aside class="notes">This is the practical human/AI/software allocation slide.</aside>
+        <aside class="notes"><p>Treat security and governance as design inputs. The FDE coordinates the evidence, but accountable control owners approve launch.</p></aside>
       </section>
 
-      <section>
-        <div class="eyebrow">High-stakes rule</div>
-        <h2>If accuracy moves money, route through a human.</h2>
-        <div class="rule"></div>
-        <div class="flow">
-          <div class="flow-item"><div class="num">AI</div><div class="step-title">Propose</div><div class="step-copy">Extract field, summarize evidence, recommend value, cite source span.</div></div>
-          <div class="flow-item"><div class="num">Software</div><div class="step-title">Constrain</div><div class="step-copy">Validate schema, range, totals, duplicate risk, permissions, and audit trail.</div></div>
-          <div class="flow-item"><div class="num">Human</div><div class="step-title">Approve</div><div class="step-copy">Review high-risk fields, exceptions, low-confidence outputs, and irreversible actions.</div></div>
-        </div>
-        <p class="small" style="margin-top: 1em;">Example: AI extracts a payment amount; software checks invoice math and PO match; human approves if amount is high, confidence is low, or the vendor is new.</p>
-        <aside class="notes">This directly covers the user’s “critical steps where money relies on accuracy” point.</aside>
-      </section>
-
-      <section>
-        <div class="eyebrow">Eval design</div>
-        <h2>Evals are built from real failures, not generic prompts.</h2>
-        <div class="rule"></div>
-        <div class="two">
+      <section id="day-two-operations">
+        <p class="eyebrow">Transfer ownership · Operating plan</p>
+        <h2>Day 2 begins before Day 1.</h2>
+        <div style="display: grid; grid-template-columns: .8fr 1.2fr; gap: 24px; margin-top: 18px;">
           <div>
-            <h3>Build the golden set</h3>
-            <ul>
-              <li>20–50 real cases to start; expand from production failures.</li>
-              <li>Include common cases, high-volume cases, and ugly exceptions.</li>
-              <li>Label expected output, allowed uncertainty, and human-review triggers.</li>
-              <li>Keep negative cases: behavior that must not happen.</li>
-            </ul>
+            <p class="quote">A production AI system is a service with probabilistic behavior.</p>
+            <p class="muted">Operate the workflow outcome, not only model uptime.</p>
           </div>
-          <div>
-            <h3>Measure the right level</h3>
-            <ul>
-              <li>Field correctness: did it extract the right value?</li>
-              <li>Decision correctness: did it route/approve/escalate correctly?</li>
-              <li>Trace quality: did it use the right evidence and tools?</li>
-              <li>Ops quality: latency, cost, retries, review burden.</li>
-            </ul>
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px;">
+            <div class="node accent"><h3>Observe</h3><p>Quality, abstention, review load, drift, latency, cost, tool errors, and business result.</p></div>
+            <div class="node warn-node"><h3>Respond</h3><p>Alert severity, triage owner, fallback mode, user communication, and incident command.</p></div>
+            <div class="node blue-node"><h3>Change</h3><p>Version prompts, models, policies, evals, and integrations with approval and rollback.</p></div>
+            <div class="node violet-node"><h3>Learn</h3><p>Review traces, add regression cases, refresh training, and report measured impact.</p></div>
           </div>
         </div>
-        <aside class="notes">This aligns with agent eval best practice: curated datasets, failures, regression suite, online production traces.</aside>
-      </section>
-
-      <section>
-        <div class="eyebrow">Deployment</div>
-        <h2>Autonomy is earned in stages.</h2>
-        <div class="ladder">
-          <div class="rung"><div class="num">0</div><div class="step-title">Observe</div><div class="step-copy">Human works; FDE measures baseline.</div></div>
-          <div class="rung"><div class="num">1</div><div class="step-title">Assist</div><div class="step-copy">AI drafts; human edits and owns action.</div></div>
-          <div class="rung"><div class="num">2</div><div class="step-title">Shadow</div><div class="step-copy">AI runs silently on real cases; compare outcomes.</div></div>
-          <div class="rung"><div class="num">3</div><div class="step-title">Approve</div><div class="step-copy">AI proposes; human approves bounded actions.</div></div>
-          <div class="rung"><div class="num">4</div><div class="step-title">Autonomous</div><div class="step-copy">AI acts only inside monitored limits.</div></div>
+        <div class="panel" style="margin-top: 24px;">
+          <p><strong>Name three owners:</strong> business outcome owner, technical service owner, and risk/control owner. Record backup coverage and escalation paths.</p>
         </div>
-        <p class="small" style="margin-top: 1em;">Many valuable deployments stay at assist, shadow, or approve. That is not failure; that is responsible design.</p>
-        <aside class="notes">Pulled from the video theme: integrate first, shadow mode, gradual autonomy.</aside>
+        <aside class="notes"><p>The Operating plan captures service objectives, dashboards, alerts, incident flow, change control, ownership, and the review cadence.</p></aside>
       </section>
 
-      <section>
-        <div class="eyebrow">Readiness checklist</div>
-        <h2>Before production, every answer needs evidence.</h2>
-        <table class="matrix">
-          <thead><tr><th>Gate</th><th>Question</th><th>Pass signal</th></tr></thead>
-          <tbody>
-            <tr><td><strong>Workflow</strong></td><td>Did we observe real cases and exceptions?</td><td>Trace map + failure taxonomy</td></tr>
-            <tr><td><strong>Ownership</strong></td><td>Who owns adoption, escalation, and Day 2 ops?</td><td>Named business + technical owners</td></tr>
-            <tr><td><strong>Boundary</strong></td><td>Which steps are human, software, AI, or hybrid?</td><td>Responsibility matrix</td></tr>
-            <tr><td><strong>Evaluation</strong></td><td>Can we prove quality on representative cases?</td><td>Golden dataset + pass/fail report</td></tr>
-            <tr><td><strong>Rollout</strong></td><td>Can it fail safely?</td><td>Guardrails, logs, rollback, review queue</td></tr>
-          </tbody>
-        </table>
-        <aside class="notes">Condensed checklist: fewer slides, more useful artifact.</aside>
-      </section>
-
-      <section>
-        <div class="eyebrow">Video frame</div>
-        <h2>Audit → Eval → Deploy. Then repeat.</h2>
-        <div class="rule"></div>
-        <div class="flow">
-          <div class="flow-item"><div class="num">Audit</div><div class="step-title">Business reality</div><div class="step-copy">Not the SOP. The real work, exceptions, owners, systems, and risks.</div></div>
-          <div class="flow-item"><div class="num">Eval</div><div class="step-title">Evidence</div><div class="step-copy">Golden cases, pass/fail criteria, failure analysis, and human-review thresholds.</div></div>
-          <div class="flow-item"><div class="num">Deploy</div><div class="step-title">Adoption</div><div class="step-copy">Integrate with existing systems, shadow, stage autonomy, monitor outcomes.</div></div>
+      <section id="adoption-transfer">
+        <p class="eyebrow">Transfer ownership · Adoption</p>
+        <h2>Ship a new operating habit, not a feature.</h2>
+        <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-top: 28px;">
+          <div class="node accent"><p class="label">01 · Co-design</p><h3>Build with operators</h3><p>Use their cases, language, exception paths, and measures of success.</p></div>
+          <div class="node"><p class="label">02 · Rehearse</p><h3>Practice the fallback</h3><p>Train normal work, low-confidence review, escalation, and incident behavior.</p></div>
+          <div class="node blue-node"><p class="label">03 · Instrument</p><h3>Watch behavior</h3><p>Measure use, overrides, abandonment, review time, and outcome—not logins alone.</p></div>
+          <div class="node violet-node"><p class="label">04 · Transfer</p><h3>Make owners independent</h3><p>Hand over runbooks, dashboards, evals, permissions, and change decisions.</p></div>
         </div>
-        <p class="small" style="margin-top: 1em;">The loop repeats because solving one workflow exposes the next bottleneck.</p>
-        <aside class="notes">This is the most direct slide from the Greg Isenberg / Voss framing.</aside>
-      </section>
-
-      <section>
-        <div class="eyebrow">FDE law</div>
-        <h2>“Happy path” demos are cheap.</h2>
-        <p class="quote" style="margin-top: 1em;">There may be one way a workflow goes right. There are a thousand ways it goes wrong.</p>
-        <div class="rule"></div>
-        <div class="three">
-          <div class="card"><h3>Find exceptions</h3><p>Malformed inputs, missing records, unclear ownership, conflicting policies, stale data.</p></div>
-          <div class="card"><h3>Design fallback</h3><p>Ask for clarification, route to queue, block action, escalate, or degrade to deterministic mode.</p></div>
-          <div class="card"><h3>Turn into evals</h3><p>Every meaningful production failure should become a regression case.</p></div>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-top: 36px;">
+          <div class="panel"><h3>Adoption signal</h3><p>Operators choose the workflow for real work, trust the review path, and can explain when not to use it.</p></div>
+          <div class="panel"><h3>Exit signal</h3><p>The customer can monitor, triage, change, and improve the system without the FDE as the daily operator.</p></div>
         </div>
-        <aside class="notes">This was one of the strongest video themes; make it memorable.</aside>
+        <aside class="notes"><p>Adoption is a behavior change and ownership transfer. The FDE stays close until the customer can run both the happy path and the exception path.</p></aside>
       </section>
 
-      <section>
-        <div class="eyebrow">Artifacts</div>
-        <h2>The lean FDE paper trail.</h2>
-        <div class="rule"></div>
-        <div class="two">
-          <ul class="artifact-list">
-            <li>Opportunity scorecard: volume, pain, metric, feasibility, owner</li>
-            <li>Workflow trace: steps, systems, handoffs, exceptions</li>
-            <li>Responsibility matrix: human / software / AI / hybrid</li>
-            <li>Risk map: fields, actions, money-at-risk, review thresholds</li>
-          </ul>
-          <ul class="artifact-list">
-            <li>Eval pack: golden cases, graders, pass/fail, regression suite</li>
-            <li>Rollout plan: observe → assist → shadow → approve → autonomy</li>
-            <li>Operating plan: owners, alerts, rollback, Day 2 runbook</li>
-            <li>Business case: cost saved, risk reduced, revenue unlocked</li>
-          </ul>
+      <section id="product-feedback-loop">
+        <p class="eyebrow">Compound learning · Product feedback</p>
+        <h2>Send evidence upstream, then prove the response downstream.</h2>
+        <div class="flywheel" style="margin-top: 52px;">
+          <div class="node accent"><p class="label">Field signal</p><h3>Observe pattern</h3><p>Repeated failure, missing capability, control gap, or winning workflow.</p></div>
+          <div class="node"><p class="label">Evidence</p><h3>Package the case</h3><p>Frequency, impact, traces, eval cases, workaround, and user context.</p></div>
+          <div class="node blue-node"><p class="label">Roadmap</p><h3>Route to owners</h3><p>Product, research, platform, security, go-to-market, or enablement.</p></div>
+          <div class="node violet-node"><p class="label">Change</p><h3>Build reusable leverage</h3><p>Model, API, control, component, pattern, documentation, or training.</p></div>
+          <div class="node warn-node"><p class="label">Validation</p><h3>Re-evaluate in field</h3><p>Run the regression set and measure adoption and workflow impact.</p></div>
         </div>
-        <aside class="notes">These are the artifacts you would actually bring to a client/team.</aside>
+        <div class="panel" style="margin-top: 30px;">
+          <p><strong>Good field feedback changes a decision.</strong> It is specific enough to reproduce, important enough to prioritize, and closed with production evidence.</p>
+        </div>
+        <aside class="notes"><p>The FDE is a sensing surface for the product and model roadmap. Raw anecdotes become useful only when paired with frequency, consequence, traces, and reproducible cases.</p></aside>
       </section>
 
-      <section>
-        <div class="eyebrow">Close</div>
-        <h2>The FDE is responsible for the boundary.</h2>
-        <p class="quote" style="margin-top: 1em;">Find the highest-leverage workflow. Embed until you understand the hidden edge cases. Then assign every step to the right owner: human, software, AI, or hybrid.</p>
+      <section id="evidence-based-expansion">
+        <p class="eyebrow">Compound learning · Business case</p>
+        <h2>Expand from measured proof, not enthusiasm.</h2>
+        <div style="display: grid; grid-template-columns: .9fr 1.1fr; gap: 24px; margin-top: 20px;">
+          <div class="panel">
+            <h3>Evidence ledger</h3>
+            <table class="matrix">
+              <thead><tr><th>Measure</th><th>Baseline</th><th>After</th></tr></thead>
+              <tbody>
+                <tr><td>Cycle time</td><td>Observed manual flow</td><td>Production cohort</td></tr>
+                <tr><td>Quality + risk</td><td>Error and exception rate</td><td>Eval + incident evidence</td></tr>
+                <tr><td>Human effort</td><td>Touch and review time</td><td>Residual review burden</td></tr>
+                <tr><td>Economics</td><td>Labor, delay, and loss</td><td>Run cost and realized value</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div>
+            <div class="node accent"><h3>Expand</h3><p>The first workflow sustains value, controls hold, ownership is real, and the next workflow shares reusable architecture or learning.</p></div>
+            <div class="node warn-node" style="margin-top: 16px;"><h3>Hold</h3><p>Adoption, reliability, control ownership, unit economics, or evidence quality is not yet durable.</p></div>
+            <div class="node blue-node" style="margin-top: 16px;"><h3>Stop or redesign</h3><p>The workflow does not create net value, transfers unacceptable risk, or depends on permanent FDE heroics.</p></div>
+          </div>
+        </div>
+        <p class="small" style="margin-top: 18px;"><strong>Starting heuristic:</strong> require a stable production cohort and an accountable Day 2 owner before funding the next deployment.</p>
+        <aside class="notes"><p>The Business case compares baseline with production evidence and makes the expand, hold, or stop decision explicit.</p></aside>
+      </section>
+
+      <section id="lifecycle-artifact-map">
+        <p class="eyebrow">Canonical lifecycle artifact map</p>
+        <h2>Seven moves. Seven working artifacts.</h2>
+        <p class="small">Repository lifecycle: Discover → Frame → Design → Build → Deploy → Enable → Expand</p>
+        <div style="margin-top: 16px;">
+          <div class="map-row"><p class="map-operating">Find leverage</p><p class="map-lifecycle">Discover</p><p class="map-artifact"><strong>Opportunity scorecard</strong> · pain, evidence, feasibility, risk, owner</p></div>
+          <div class="map-row"><p class="map-operating">Map reality</p><p class="map-lifecycle">Frame</p><p class="map-artifact"><strong>Workflow trace</strong> · cases, steps, systems, handoffs, exceptions</p></div>
+          <div class="map-row"><p class="map-operating">Design the boundary</p><p class="map-lifecycle">Design</p><p class="map-artifact"><strong>Responsibility matrix</strong> · human, software, AI, hybrid, escalation</p></div>
+          <div class="map-row"><p class="map-operating">Prove quality</p><p class="map-lifecycle">Build</p><p class="map-artifact"><strong>Evaluation pack</strong> · cases, graders, thresholds, failures, release</p></div>
+          <div class="map-row"><p class="map-operating">Land production</p><p class="map-lifecycle">Deploy</p><p class="map-artifact"><strong>Rollout plan</strong> · cohorts, gates, controls, rollback, decision</p></div>
+          <div class="map-row"><p class="map-operating">Transfer ownership</p><p class="map-lifecycle">Enable</p><p class="map-artifact"><strong>Operating plan</strong> · owners, observability, incidents, change, cadence</p></div>
+          <div class="map-row"><p class="map-operating">Compound learning</p><p class="map-lifecycle">Expand</p><p class="map-artifact"><strong>Business case</strong> · baseline, outcome, economics, risks, next decision</p></div>
+        </div>
+        <p class="small" style="margin-top: 14px;">Artifacts are decision records, not ceremony. Update them as evidence changes.</p>
+        <aside class="notes"><p>This slide defines the canonical artifact names consumed by the toolkit and skills. Keep these seven names stable.</p></aside>
+      </section>
+
+      <section id="close-and-sources">
+        <p class="eyebrow">Close</p>
+        <h2>The FDE is responsible for the boundary—and the outcome.</h2>
+        <p class="quote" style="margin-top: 24px;">Great AI implementation does not maximize autonomy. It increases throughput while making quality, risk, ownership, and learning visible.</p>
         <div class="rule"></div>
-        <p class="muted" style="max-width: 900px;">Great FDE work does not maximize AI. It minimizes fragility while increasing business throughput.</p>
-        <p class="small" style="margin-top: 1.2em;">Sources: reveal.js; Awesome FDE Roadmap; Greg Isenberg / Voss FDE video and transcript-grounded notes; LangChain Agent Evaluation Readiness Checklist.</p>
+        <div style="display: grid; grid-template-columns: .8fr 1.2fr; gap: 28px;">
+          <div>
+            <h3>Carry the loop</h3>
+            <p class="muted">Find leverage → Map reality → Design the boundary → Prove quality → Land production → Transfer ownership → Compound learning</p>
+          </div>
+          <div>
+            <h3>Primary role sources</h3>
+            <ul class="source-list">
+              <li><a href="https://openai.com/careers/forward-deployed-engineer-%28fde%29-sf-san-francisco/">OpenAI · Forward Deployed Engineer (FDE)</a></li>
+              <li><a href="https://jobs.lever.co/palantir/5168e8fd-fec1-4fea-b7a1-81bdaea65850">Palantir · Forward Deployed Software Engineer</a></li>
+              <li><a href="https://stripe.com/careers/listing/forward-deployed-engineer-professional-services/8075577">Stripe · Forward Deployed Engineer, Professional Services</a></li>
+              <li><a href="https://scale.com/careers/4593571005">Scale AI · Forward Deployed Engineer, GenAI</a></li>
+            </ul>
+            <p class="micro">Primary role descriptions accessed 26 August 2026.</p>
+          </div>
+        </div>
+        <aside class="notes"><p>Close on accountable outcomes: the FDE leaves behind a working system, capable owners, reusable evidence, and a justified next decision.</p></aside>
       </section>
 
     </div>
   </div>
-  <div class="footer">Forward Deployed Engineering · field playbook</div>
+  <div class="footer"><p>Forward Deployed Engineering · field playbook</p></div>
 
   <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.2.1/dist/reveal.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.2.1/plugin/notes/notes.js"></script>

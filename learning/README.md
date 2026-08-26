@@ -1,6 +1,6 @@
 # Learning center
 
-Learning explains the concepts and mental models behind effective Forward Deployed Engineering. It answers **what** an FDE should understand and **why** it matters; it does not contain reusable templates or detailed instructions for a particular stage.
+Learning explains the concepts and mental models behind effective Forward Deployed Engineering for AI implementation. This repository focuses on how an AI FDE turns operational problems into adopted, governed production systems; it does not attempt to describe every form of forward-deployed work. Learning answers **what** an AI FDE should understand and **why** it matters; it does not contain reusable templates or detailed instructions for a particular stage.
 
 Start with these foundations:
 
