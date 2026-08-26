@@ -48,10 +48,10 @@ Turn evidence into a shared problem definition, desired outcome, success measure
 
 ## Related capabilities
 
-- Problem framing
-- Outcome and metric definition
-- Workshop facilitation
-- Stakeholder alignment and decision logging
+- [Workflow discovery and opportunity framing](../../skills/workflow-discovery.md)
+- [Workflow trace](../../toolkit/workflow-trace.md)
+- [Opportunity scorecard](../../toolkit/opportunity-scorecard.md)
+- [Business case](../../toolkit/business-case.md)
 
 Related catalogs: [Skills](../../skills/README.md) teach reusable capabilities; [Toolkit](../../toolkit/README.md) contains reusable artifacts.
 

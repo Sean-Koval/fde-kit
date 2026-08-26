@@ -48,10 +48,11 @@ Explore and validate a feasible solution approach, including experience, technic
 
 ## Related capabilities
 
-- Solution shaping
-- Rapid prototyping and user validation
-- Architecture and integration design
-- Risk analysis and incremental planning
+- [Human, software, and AI system design](../../skills/ai-system-design.md)
+- [Evaluation and staged rollout](../../skills/evaluation-and-rollout.md)
+- [Workflow trace](../../toolkit/workflow-trace.md)
+- [Responsibility matrix](../../toolkit/responsibility-matrix.md)
+- [Evaluation pack](../../toolkit/evaluation-pack.md)
 
 Related catalogs: [Skills](../../skills/README.md) teach reusable capabilities; [Toolkit](../../toolkit/README.md) contains reusable artifacts.
 

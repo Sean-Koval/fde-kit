@@ -48,10 +48,11 @@ Create the working solution in small increments, validating assumptions and qual
 
 ## Related capabilities
 
-- Incremental delivery
-- Acceptance testing and demonstration
-- Technical decision recording
-- Production-readiness planning
+- [Human, software, and AI system design](../../skills/ai-system-design.md)
+- [Evaluation and staged rollout](../../skills/evaluation-and-rollout.md)
+- [Responsibility matrix](../../toolkit/responsibility-matrix.md)
+- [Evaluation pack](../../toolkit/evaluation-pack.md)
+- [Rollout plan](../../toolkit/rollout-plan.md)
 
 Related catalogs: [Skills](../../skills/README.md) teach reusable capabilities; [Toolkit](../../toolkit/README.md) contains reusable artifacts.
 

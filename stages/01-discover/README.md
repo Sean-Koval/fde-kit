@@ -48,10 +48,9 @@ Understand the customer’s context, workflows, stakeholders, constraints, and s
 
 ## Related capabilities
 
-- Discovery interviewing
-- Workflow observation and mapping
-- Stakeholder mapping
-- Evidence synthesis
+- [Workflow discovery and opportunity framing](../../skills/workflow-discovery.md)
+- [Workflow trace](../../toolkit/workflow-trace.md)
+- [Opportunity scorecard](../../toolkit/opportunity-scorecard.md)
 
 Related catalogs: [Skills](../../skills/README.md) teach reusable capabilities; [Toolkit](../../toolkit/README.md) contains reusable artifacts.
 

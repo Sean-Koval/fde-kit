@@ -48,10 +48,11 @@ Use outcomes, learning, and demand to decide whether and how to extend the value
 
 ## Related capabilities
 
-- Outcome review and value storytelling
-- Opportunity prioritization
-- Portfolio and scope management
-- Discovery re-entry and engagement planning
+- [Workflow discovery and opportunity framing](../../skills/workflow-discovery.md)
+- [Adoption, operations, and product feedback](../../skills/adoption-and-feedback.md)
+- [Opportunity scorecard](../../toolkit/opportunity-scorecard.md)
+- [Operating plan](../../toolkit/operating-plan.md)
+- [Business case](../../toolkit/business-case.md)
 
 Related catalogs: [Skills](../../skills/README.md) teach reusable capabilities; [Toolkit](../../toolkit/README.md) contains reusable artifacts.
 

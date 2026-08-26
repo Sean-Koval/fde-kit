@@ -48,10 +48,14 @@ Help users and owners adopt, operate, and improve the solution.
 
 ## Related capabilities
 
-- Change enablement
-- User onboarding and documentation
-- Operational handoff
-- Adoption and outcome measurement
+- [Human, software, and AI system design](../../skills/ai-system-design.md)
+- [Evaluation and staged rollout](../../skills/evaluation-and-rollout.md)
+- [Adoption, operations, and product feedback](../../skills/adoption-and-feedback.md)
+- [Responsibility matrix](../../toolkit/responsibility-matrix.md)
+- [Evaluation pack](../../toolkit/evaluation-pack.md)
+- [Rollout plan](../../toolkit/rollout-plan.md)
+- [Operating plan](../../toolkit/operating-plan.md)
+- [Business case](../../toolkit/business-case.md)
 
 Related catalogs: [Skills](../../skills/README.md) teach reusable capabilities; [Toolkit](../../toolkit/README.md) contains reusable artifacts.
 
