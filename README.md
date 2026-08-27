@@ -1,3 +1,5 @@
+![FDE Kit — a practical learning center and field toolkit for AI implementation](assets/fde-kit-banner.svg)
+
 # FDE Kit
 
 FDE Kit is a practical learning center and field toolkit for Forward Deployed Engineers (FDEs). It helps people learn the role, navigate customer engagements, build reusable capabilities, and apply useful artifacts in real work.
