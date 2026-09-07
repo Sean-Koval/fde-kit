@@ -193,9 +193,11 @@ def check(root: Path) -> list[str]:
                 problems.append(f"agents/skills/{skill.name}/SKILL.md: frontmatter name must be '{skill.name}'")
             if not re.search(r"^description:\s*\S", front, re.M):
                 problems.append(f"agents/skills/{skill.name}/SKILL.md: frontmatter description missing")
-            index = agent_skills / "README.md"
-            if index.exists() and f"{skill.name}/SKILL.md" not in index.read_text(encoding="utf-8"):
-                problems.append(f"agents/skills/README.md: does not link {skill.name}/SKILL.md")
+            index = root / "agents" / "README.md"
+            if not index.exists():
+                problems.append("agents/README.md: missing")
+            elif f"skills/{skill.name}/SKILL.md" not in index.read_text(encoding="utf-8"):
+                problems.append(f"agents/README.md: does not link skills/{skill.name}/SKILL.md")
 
     deck = root / "learning" / "presentations" / "fde-overview.html"
     if deck.exists():
