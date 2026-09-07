@@ -9,47 +9,47 @@ Fills the [evaluation pack](../../../toolkit/evaluation-pack.md) template. Judgm
 
 ## Use when
 
-- Design needs the evidence approach defined before the first increment: cases, graders, thresholds, and the owner who decides.
-- Build has a run to record, or a failure to classify and route.
-- Deploy or Enable needs a promotion, hold, or rollback decision, or a production failure must join the regression set.
-- Not when the only evidence is a demo or a public benchmark score; the grader guide's anti-pattern table explains why neither is release evidence.
+- Design needs the evidence approach defined before the first increment: cases, graders, thresholds, decision owner.
+- Build has a run to record or a failure to classify and route.
+- Deploy or Enable needs a promote, hold, or rollback record, or a production failure must join the regression set.
+- Not when the only evidence is a demo or a public benchmark; the grader guide's anti-pattern table says why.
 
 ## Obtain first
 
 - [ ] System under test: model, prompt, retrieval, policy, integration, and application versions.
-- [ ] The case set or its sources (production traces, review queues, the workflow trace), the selection method, the count per stratum, and the case-set version identifier.
-- [ ] Expected outcome, required evidence, and permitted human involvement for each case.
-- [ ] Graders available: deterministic checks, trace assertions, human rubric, model-graded judge. For a judge, its measured agreement with human labels.
-- [ ] Thresholds, who set them, and when; thresholds set after a run are recorded as such.
-- [ ] Run results if a run exists: run identifier, date, executor, environment, seed or settings, per-case outcomes.
+- [ ] The case set or its sources, the selection method, the count per stratum, and the case-set version identifier.
+- [ ] Expected outcome, required evidence, and permitted human involvement per case.
+- [ ] Graders available; for a model-graded judge, its measured agreement with human labels.
+- [ ] Thresholds, who set them, and when.
+- [ ] Run results if a run exists: run identifier, date, executor, environment, settings, per-case outcomes.
 - [ ] Release decision owner, rollback target, and rollback owner.
 - [ ] Production failures awaiting classification, with trace identifiers.
 
 ## Procedure
 
-1. Confirm the inputs. Without a versioned case set and a named decision owner, produce only the "Outcome criteria" and "Representative case set" sections and mark the rest as gaps.
-2. Choose the unit of evaluation per criterion: response, trajectory, or end-to-end workflow outcome (grader guide, technique 1). Most workflows need one criterion at the response level and one at the workflow level.
-3. Complete "Representative case set". Check coverage against the four required kinds: common work, costly exceptions, policy-sensitive cases, known failures; add adversarial and valid-abstain cases (technique 2). State the selection method verbatim from the inputs. Size the set by the guide's sizing heuristics, and label them as such if you cite them.
-4. Complete "Outcome criteria" with the cheapest valid grader per criterion (technique 3). Record a judge-produced metric only beside its agreement statistic (technique 4); if agreement was never measured, write a gap.
-5. Complete "Reproducibility metadata" from the run inputs. Any missing field is a gap, because the check for reproducibility fails without it.
-6. Complete "Results and failure analysis". Report per-stratum rates with uncertainty where the inputs allow (technique 5). Read failures before classifying them, assign each to the model, data, tool, policy, integration, UX, or process class, route it to the layer where the cause lives, and mark whether it joins the regression set (technique 6).
+1. Confirm the inputs. Without a versioned case set and a named decision owner, produce only "Outcome criteria" and "Representative case set" and mark the rest as gaps.
+2. Choose the unit of evaluation per criterion: response, trajectory, or workflow outcome (grader guide, technique 1). Most workflows need one criterion at the response level and one at the workflow level.
+3. Complete "Representative case set". Check coverage of common work, costly exceptions, policy-sensitive cases, and known failures; add adversarial and valid-abstain cases (technique 2). State the selection method verbatim. Cite the guide's sizing heuristics as heuristics.
+4. Complete "Outcome criteria" with the cheapest valid grader per criterion (technique 3). Record a judge metric only beside its agreement statistic (technique 4); unmeasured agreement is a gap.
+5. Complete "Reproducibility metadata" from the run inputs; any missing field is a gap.
+6. Complete "Results and failure analysis". Report per-stratum rates with uncertainty where inputs allow (technique 5). Read failures before classifying; assign each a cause class, route it to the layer where the cause lives, and mark whether it joins regression (technique 6).
 7. Complete "Online monitoring and re-evaluation" with the signals that mirror the offline graders (technique 7).
-8. Complete "Release decision" with the decision the owner has recorded. If the owner has not decided, write the decision as open and summarize which thresholds passed and which did not, using the rollout states in the rollout guide's technique step 5 as the vocabulary.
+8. Complete "Release decision" with the decision the owner recorded. If none, write it as open and summarize which thresholds passed, using the rollout states in the rollout guide's technique step 5.
 9. Run the completion checks and print the summary line.
 
 ## Output
 
-Fill the Template section of [evaluation-pack.md](../../../toolkit/evaluation-pack.md). Save to `docs/engagement/<workflow>/evaluation-pack-<system-version>.md` in the user's repository; keep one file per system version so runs are comparable.
+Fill the Template section of [evaluation-pack.md](../../../toolkit/evaluation-pack.md). Save to `docs/engagement/<workflow>/evaluation-pack-<system-version>.md` in the user's repository, one file per system version.
 
-Print: `Evaluation pack <workflow> <system version>: <n> cases in <n> strata; <n> of <n> criteria met; <n> failures classified, <n> added to regression; decision <promote/hold/roll back/open>; <n> gaps.`
+Print: `Evaluation pack <workflow> <version>: <n> cases in <n> strata; <n> of <n> criteria met; <n> failures classified, <n> added to regression; decision <promote/hold/roll back/open>; <n> gaps.`
 
 ## Rules
 
 - No invented facts: results, agreement statistics, thresholds, and versions come from inputs or run records.
-- Missing inputs are written as `[gap: what is missing and who can supply it]`.
+- Missing inputs become `[gap: what is missing and who can supply it]`.
 - Sizing and threshold rules of thumb are labeled starting heuristics, not industry standards.
-- Reference cases and traces by identifier; the pack carries no customer record contents, personal data, or credentials.
-- Promote, hold, and roll back belong to the release decision owner; thresholds belong to whoever set them. The skill reports against them; it does not move them or decide.
+- Reference cases and traces by identifier; no customer record contents, personal data, or credentials in the pack.
+- Promote, hold, and roll back belong to the release owner; thresholds belong to whoever set them. The skill reports; it does not move thresholds or decide.
 
 ## Completion checks
 
