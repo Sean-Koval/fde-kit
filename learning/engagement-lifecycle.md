@@ -4,6 +4,18 @@ The FDE engagement lifecycle is:
 
 **Discover → Frame → Design → Build → Deploy → Enable → Expand**
 
+```mermaid
+flowchart LR
+    D[Discover] --> F[Frame] --> DE[Design] --> B[Build] --> DP[Deploy] --> E[Enable] --> X[Expand]
+    F -->|problem statement outruns the evidence| D
+    DE -->|no boundary can meet the success measure| F
+    B -->|first increment fails its acceptance signal| DE
+    DP -->|a rollout gate fails or rollback is unproven| DE
+    E -->|operating evidence changes the safe boundary| DE
+    X -->|value does not sustain| F
+    X -->|a new workflow is proposed| D
+```
+
 It is the operational spine of the repository. Each stage resolves a different uncertainty and establishes the conditions for the next. Teams may loop backward when evidence invalidates an earlier assumption.
 
 ## Discover
@@ -36,4 +48,4 @@ Use outcomes, learning, and demand to decide whether and how to extend the value
 
 ## Using this model
 
-Learning pages provide the shared concepts behind the lifecycle. The [stage playbook](../stages/README.md) provides detailed guidance for what to do now. The [skills](../skills/README.md), [toolkit](../toolkit/README.md), and [examples](../examples/README.md) indexes define curated catalogs and contribution contracts for content that meets the repository quality bar.
+Learning pages provide the shared concepts behind the lifecycle. The [stage playbook](../stages/README.md) provides what to do now: entry conditions, activities, deliverables, and exit criteria for the current stage. The [skills](../skills/README.md), [toolkit](../toolkit/README.md), and [examples](../examples/README.md) sections now provide published method guides, copy-ready artifacts, and a completed worked example that shows the artifacts and loop-back decisions in use.
