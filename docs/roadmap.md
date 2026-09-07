@@ -8,7 +8,7 @@ Updated: 2026-09-07. This document owns delivery sequence. The [PRD](design/fde-
 | --- | --- | --- |
 | R1 Learning center foundation | 2026-08-24 | Information architecture, lifecycle, seven stage pages, section contracts |
 | R2 AI FDE content | 2026-08-26 | Field playbook deck, four method guides, seven artifacts, invoice-intake worked example |
-| R3 Field craft and technical foundations | in progress | See below |
+| R3 Field craft and technical foundations | 2026-09-07 | Seven technical and customer-craft guides, six field artifacts, system patterns with diagrams, seven-module curriculum with capstone, interview preparation, glossary, six agent skills, AI-DLC workflow and automated checks |
 
 ## R3: Field craft and technical foundations
 
@@ -17,14 +17,14 @@ Goal: make building the AI part, evaluating it, and running the customer relatio
 | Work ID | Outcome | Depends on | Status |
 | --- | --- | --- | --- |
 | `repository-workflow` | AI-DLC adopted; link, schema, whitespace, and generated-file checks run locally and in CI; contribution guide | none | done |
-| `technical-skill-guides` | Five technical skill guides: context engineering, tool-using agents, retrieval and grounding, grader design and error analysis, production readiness | `repository-workflow` | planned |
-| `customer-craft-skill-guides` | Two skill guides: discovery interviewing and facilitation; executive communication | `repository-workflow` | planned |
-| `field-craft-toolkit` | Six artifacts: interview guide, stakeholder map, pilot charter, AI security review, executive readout, field report | `repository-workflow` | planned |
-| `system-patterns-and-diagrams` | Reference system patterns page with Mermaid diagrams; lifecycle and operating-model diagrams in learning pages | `repository-workflow` | planned |
-| `learning-path` | Seven-module curriculum with capstone, interview preparation, glossary | all guides and artifacts above | planned |
-| `agent-skills` | Six agent skills in the AI-DLC convention with an installation guide | `field-craft-toolkit` | planned |
+| `technical-skill-guides` | Five technical skill guides: context engineering, tool-using agents, retrieval and grounding, grader design and error analysis, production readiness | `repository-workflow` | done |
+| `customer-craft-skill-guides` | Two skill guides: discovery interviewing and facilitation; executive communication | `repository-workflow` | done |
+| `field-craft-toolkit` | Six artifacts: interview guide, stakeholder map, pilot charter, AI security review, executive readout, field report | `repository-workflow` | done |
+| `system-patterns-and-diagrams` | Reference system patterns page with Mermaid diagrams; lifecycle and operating-model diagrams in learning pages | `repository-workflow` | done |
+| `learning-path` | Seven-module curriculum with capstone, interview preparation, glossary | all guides and artifacts above | done |
+| `agent-skills` | Six agent skills in the AI-DLC convention with an installation guide | `field-craft-toolkit` | done |
 
-Exit: every PRD acceptance row O1 to O9 is satisfied, `ai-dlc project check --required` passes, and a full read of the learner path finds no dead end.
+Exit: every PRD acceptance row O1 to O9 is satisfied and `ai-dlc project check --required` passes (verified 2026-09-07; see the [handoff](handoffs/2026-09-07-field-craft-release.md)). One item remains open: a full read of the learner path by a person other than the authors, recorded as the first task of R4.
 
 ## R4: Second shape, deeper practice
 
