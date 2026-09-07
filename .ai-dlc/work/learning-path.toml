@@ -1,0 +1,15 @@
+schema = 1
+id = "learning-path"
+title = "Give learners a sequenced path from role understanding to a capstone"
+scope = "Add learning/curriculum/ with an index and seven modules ending in a capstone with a rubric, learning/interview-preparation.md, and learning/glossary.md. Update the root README learner path."
+requires_spec = false
+spec_reason = "Documentation content governed by the curriculum module schema; no software behavior."
+acceptance = [
+    "learning/curriculum/README.md sequences modules 01 to 07 and states expected effort as a starting heuristic.",
+    "Each module passes the module schema (Outcome, Prerequisites, Study, Exercise, Assessment, Next) and links the guides and artifacts it uses.",
+    "Module 07 is a capstone that runs a fictional engagement end to end and includes a scoring rubric.",
+    "learning/interview-preparation.md describes interview shapes (technical build, LLM system design, customer scenario, evidence discussion, behavioral) with drills and a self-scoring rubric, and cites only public role descriptions.",
+    "learning/glossary.md defines the terms the kit uses in its own sense with links to the page that owns each.",
+    "README.md learner path points to the curriculum; learning/README.md lists the new pages.",
+]
+reviewed = true

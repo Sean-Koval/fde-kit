@@ -1,0 +1,15 @@
+schema = 1
+id = "repository-workflow"
+title = "Adopt AI-DLC and automate the repository's content checks"
+scope = "Adopt AI-DLC with the generic preset (scm, agent-client), replace manual verification steps with scripted link, schema, whitespace, and generated-file checks that run locally through ai-dlc project check and directly in CI, and add the contribution guide."
+requires_spec = false
+spec_reason = "Repository tooling and documentation; no user-visible product behavior beyond the checks themselves, which are specified by their scripts and CONTRIBUTING.md."
+acceptance = [
+    "ai-dlc.toml declares required checks generated, links, schemas, whitespace and `ai-dlc project check --required` passes.",
+    ".github/workflows/verify.yml runs the same four checks on ubuntu-latest without an AI-DLC release bootstrap.",
+    "scripts/check_links.py fails on any missing relative link target or heading anchor.",
+    "scripts/check_schemas.py enforces the toolkit, skill, stage, curriculum module, agent skill, example, deck, empty-directory, and placeholder rules listed in CONTRIBUTING.md.",
+    "AGENTS.md and CLAUDE.md are rendered by ai-dlc agents render and CONTRIBUTING.md tells contributors not to edit them by hand.",
+    "docs/decisions/0001-adopt-ai-dlc.md records the decision and the CI compromise.",
+]
+reviewed = true

@@ -1,0 +1,14 @@
+schema = 1
+id = "customer-craft-skill-guides"
+title = "Teach discovery interviewing, facilitation, and executive communication"
+scope = "Add two skill guides: discovery interviewing and workshop facilitation; executive communication and expectation management. Link them from the skills index and stage pages."
+requires_spec = false
+spec_reason = "Documentation content governed by the skill schema; no software behavior."
+acceptance = [
+    "skills/discovery-interviewing.md and skills/executive-communication.md exist and pass the skill schema.",
+    "The interviewing guide covers question progression from open to specific to evidence, observing work, listening for workarounds, synthesis, and designing a kickoff and a scoping workshop.",
+    "The communication guide covers altitude, decision-first structure, stating evidence and limits, managing model capability expectations, declining unsafe scope, and the written readout.",
+    "Both guides use realistic scenarios for good and weak patterns and link the discovery interview guide, stakeholder map, executive readout, or pilot charter artifacts.",
+    "skills/README.md removes 'workshop facilitation' from future candidates because it is now published.",
+]
+reviewed = true

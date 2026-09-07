@@ -1,0 +1,14 @@
+schema = 1
+id = "field-craft-toolkit"
+title = "Equip the customer-facing and security parts of an engagement"
+scope = "Add six toolkit artifacts: discovery interview guide, stakeholder map, pilot charter, AI security and governance review, executive readout, and field report. Link them from the toolkit index and stage pages."
+requires_spec = false
+spec_reason = "Documentation content governed by the toolkit schema; no software behavior."
+acceptance = [
+    "toolkit/discovery-interview-guide.md, toolkit/stakeholder-map.md, toolkit/pilot-charter.md, toolkit/ai-security-review.md, toolkit/executive-readout.md, and toolkit/field-report.md exist and pass the toolkit schema.",
+    "Every template elicits owners, dates, evidence sources, thresholds, and failure or stop paths rather than commentary.",
+    "The security review covers data classification and residency, prompt injection through retrieved and tool-returned content, tool permission scoping, prompt and output logging and retention, model-provider terms, safety evaluation, and incident response.",
+    "The field report template requires a reproducible case (input, expected, observed, system version) for every reported model or product issue.",
+    "toolkit/README.md lists all six artifacts with useful stages, and each supported stage page links the artifact under Related capabilities.",
+]
+reviewed = true

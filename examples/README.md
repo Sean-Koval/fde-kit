@@ -14,7 +14,11 @@ This fictional accounts-payable engagement follows one bounded workflow through 
 | Controlled AI system | Architecture and responsibility boundaries for AI, deterministic software, and accountable humans |
 | Release proof | Versioned evaluation results, thresholds, staged gates, rollback rehearsal, and limitations |
 | Durable outcome | Day 2 owners, adoption and operating signals, measured business result, and expansion reasoning |
-| Toolkit excerpts | All seven [field artifacts](../toolkit/README.md), completed for one coherent engagement |
+| Toolkit excerpts | The seven original [field artifacts](../toolkit/README.md) (opportunity scorecard through business case), completed for one coherent engagement |
+
+## Planned examples
+
+The [roadmap](../docs/roadmap.md) schedules a second example with a different shape: a retrieval-grounded, tool-using support agent, so that entitlement-filtered retrieval, tool approval tiers, prompt-injection handling, and separate evaluation of retrieval and generation are shown completed. Until then, [AI system patterns](../learning/system-patterns.md) describes those shapes and the [capstone](../learning/curriculum/07-capstone.md) gives two fictional scenario seeds to practice them.
 
 ## Contribution contract
 

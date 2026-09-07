@@ -48,11 +48,19 @@ Understand the customer’s context, workflows, stakeholders, constraints, and s
 
 ## Related capabilities
 
+Skill guides:
+
 - [Workflow discovery and opportunity framing](../../skills/workflow-discovery.md)
+- [Discovery interviewing and workshop facilitation](../../skills/discovery-interviewing.md)
+
+Toolkit artifacts:
+
 - [Workflow trace](../../toolkit/workflow-trace.md)
+- [Discovery interview guide](../../toolkit/discovery-interview-guide.md)
+- [Stakeholder map](../../toolkit/stakeholder-map.md)
 - [Opportunity scorecard](../../toolkit/opportunity-scorecard.md)
 
-Related catalogs: [Skills](../../skills/README.md) teach reusable capabilities; [Toolkit](../../toolkit/README.md) contains reusable artifacts.
+Related catalogs: [Skills](../../skills/README.md) teach reusable capabilities; [Toolkit](../../toolkit/README.md) contains reusable artifacts; [Agent skills](../../agents/README.md) run the same methods inside an agent harness.
 
 ## Practice
 

@@ -1,6 +1,6 @@
 # Lifecycle stage playbook
 
-Use this playbook to decide what should happen now in a customer engagement. It turns the shared [engagement lifecycle](../learning/engagement-lifecycle.md) into operational guidance. The [skills](../skills/README.md) and [toolkit](../toolkit/README.md) indexes define curated catalogs and contribution contracts; they do not yet supply stage-ready guides or artifacts.
+Use this playbook to decide what should happen now in a customer engagement. It turns the shared [engagement lifecycle](../learning/engagement-lifecycle.md) into operational guidance. Each stage page names the [skill guides](../skills/README.md) that teach its methods and the [toolkit artifacts](../toolkit/README.md) it produces; the [agent skills](../agents/README.md) run the same methods inside an agent harness.
 
 ## The lifecycle
 

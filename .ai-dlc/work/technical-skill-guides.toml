@@ -1,0 +1,15 @@
+schema = 1
+id = "technical-skill-guides"
+title = "Teach the technical craft of building LLM systems"
+scope = "Add five skill guides: context engineering and prompt design, designing tool-using agents, retrieval and grounding, grader design and error analysis, and production readiness for LLM systems. Link them from the skills index and the stage pages they serve."
+requires_spec = false
+spec_reason = "Documentation content governed by the skill schema and CONTRIBUTING.md conventions; no software behavior."
+acceptance = [
+    "skills/context-engineering.md, skills/agent-and-tool-design.md, skills/retrieval-and-grounding.md, skills/eval-engineering.md, and skills/production-readiness.md exist and pass the skill schema.",
+    "Each guide is vendor-neutral, names concrete mechanisms, contrasts a specific good pattern with a specific weak pattern, and labels every numeric rule as a starting heuristic.",
+    "Each guide links at least two lifecycle stages and at least one toolkit artifact, and the linked stage pages list the guide under Related capabilities.",
+    "skills/README.md lists all five guides with their useful stages.",
+    "The evaluation guide explains how to calibrate a model-graded judge against human labels and how to run an error-analysis loop that feeds a regression set.",
+    "The agent guide states permission tiers, approval points, stopping rules, and budgets for a tool-using agent and defers boundary ownership to the responsibility matrix.",
+]
+reviewed = true
