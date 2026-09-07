@@ -1,0 +1,55 @@
+---
+name: fde-opportunity-scorecard
+description: Use when comparing candidate workflows for an AI investment and recording an evidence-backed advance, investigate, defer, or enable-locally decision.
+---
+
+# Opportunity scorecard
+
+Fills the [opportunity scorecard](../../../toolkit/opportunity-scorecard.md) template. Judgment comes from [Workflow discovery and opportunity framing](../../../skills/workflow-discovery.md), especially technique steps 4 to 6.
+
+## Use when
+
+- Discover or Frame has more than one candidate workflow and the sponsor needs a comparison before delivery capacity is committed.
+- Expand is reprioritizing from measured outcomes and a new candidate must be compared fairly with the current workflow.
+- Not when there is one preselected demo and no evidence for alternatives. Say so; the artifact is a decision aid, not a justification.
+
+## Obtain first
+
+- [ ] The candidate list: workflow name, users, outcome owner, and system of record for each.
+- [ ] For each candidate: pain signal, baseline (measure, value, period, source), volume, and the evidence already reviewed, ideally a [workflow trace](../../../toolkit/workflow-trace.md).
+- [ ] Known constraints per candidate: data classification, policy or safety consequence, integration dependencies, adoption barriers.
+- [ ] The named selection decision owner and the date a decision is needed.
+- [ ] Any thresholds the owner has already set for the first evidence gate.
+
+## Procedure
+
+1. Confirm the inputs. A candidate with no baseline and no observed case can still be scored, but its scores are assumptions with tests, not evidence.
+2. Score one criterion at a time across all candidates, not one candidate at a time; this keeps the standard even (see the scoping workshop block in [Discovery interviewing](../../../skills/discovery-interviewing.md)). Use the 1 to 5 scale the template defines; the template already labels it a starting heuristic.
+3. For every score, cite the evidence and its source, and rate confidence. Where evidence is absent, write "assumption" and the test that would settle it.
+4. Complete "Constraints and safeguards" for the leading candidate. Record an accountable owner only when the user names one.
+5. Complete "Comparison and selection". Rank from the scores, then state the rationale as a trade-off in words; a higher total alone is not a rationale (guide technique step 4).
+6. Draft "Candidate recommendation" with the recommendation the evidence supports: advance, investigate, defer, or enable locally (guide technique step 6). State the smallest first wedge and which missing fact could reverse the recommendation.
+7. Complete "Next evidence gate" with the hypothesis, the measure, and the failure path. Thresholds come from the owner; if none exist, write a gap naming the owner.
+8. Record the decision only if the decision owner has made it; otherwise mark the decision open and list what the owner needs. Run the completion checks and print the summary line.
+
+## Output
+
+Fill the Template section of [opportunity-scorecard.md](../../../toolkit/opportunity-scorecard.md). Save to `docs/engagement/<workflow>/opportunity-scorecard.md` in the user's repository, with `<workflow>` being the leading candidate or the engagement name when no candidate is selected.
+
+Print: `Opportunity scorecard: <n> candidates; leading <workflow>; recommendation <advance/investigate/defer/enable locally>; decision <recorded by owner or open>; <n> gaps.`
+
+## Rules
+
+- No invented facts: baselines, volumes, and constraints come from inputs or cited sources.
+- Missing inputs are written as `[gap: what is missing and who can supply it]`.
+- Scores are labeled heuristics; the artifact says so once, near the first score.
+- Reference interviews, logs, and records by identifier; no customer record contents or personal data in the scorecard.
+- The selection decision belongs to the named decision owner. The skill recommends; it does not select.
+
+## Completion checks
+
+- [ ] Candidate workflows are compared in the ranking summary, and the selection decision has a named owner.
+- [ ] The selected workflow, affected users, business outcome owner, and first wedge are named.
+- [ ] Every score cites evidence or is explicitly marked as an assumption with a test.
+- [ ] Safety, data, integration, and adoption constraints have accountable owners.
+- [ ] The decision, decision owner, next evidence gate, and failure path are recorded.
