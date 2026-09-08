@@ -26,7 +26,7 @@ Run on the final tree of this branch:
 | mermaid (optional) | `python3 scripts/check_mermaid.py` with the Mermaid CLI and Chromium | passed, 16 diagrams |
 | manifest | `ai-dlc project check --root . --required` | all four required checks passed |
 
-CI (`.github/workflows/verify.yml`) runs the same four scripts on every pull request and push to `main`. It has not yet run on this branch because no pull request has been opened.
+CI (`.github/workflows/verify.yml`) runs the same four scripts on every pull request and push to `main`. Its first run, on [pull request #1](https://github.com/Sean-Koval/fde-kit/pull/1) at `483be11`, passed.
 
 ## What was delivered
 
@@ -47,14 +47,14 @@ Totals after this release: 11 skill guides, 13 toolkit artifacts, 7 curriculum m
 
 1. **No human read of the learner path yet.** Every file was reviewed against the quality bar and schema, but nobody has walked modules 01 to 07 as a learner. First task of R4.
 2. **Agent skills are untested in a live harness.** They follow the AI-DLC packaging convention and reference real template sections, but no session has run one end to end. Try `fde-workflow-trace` on a real case and record what the skill asked for that the template did not need, or the reverse.
-3. **CI is unverified on this branch.** The workflow was rewritten to run without an AI-DLC release bootstrap; its first run happens when a pull request is opened. If it fails, the scripts run identically locally, so the cause will be environment (Python version on the runner) rather than content.
+3. **CI has one green run.** The workflow was rewritten to run without an AI-DLC release bootstrap and passed on the pull request's first run. It has not yet run on a push to `main`; the receipt artifact is uploaded but nothing consumes it until a tracker role is configured.
 4. **Fictional figures added inside the LumenPeak story.** The new guides introduce a prompt version `P-AP-1.3`, judge agreement of 94 percent with kappa 0.83, and an 11-of-19 failure cluster that the worked example does not itself record. They are labeled fictional and do not contradict the example. Either add them to the example in R4 or keep them as guide-only illustrations.
 5. **Template-managed files were modified.** `verify.yml` differs from the AI-DLC template; `ai-dlc project sync` will merge three-way when the template updates. `.gitignore` was merged by hand.
 6. **The sandbox could not run `mise install` for the AI-DLC checkout itself** (proxy blocks mise's version endpoints and the GitHub releases API). This does not affect FDE Kit, whose `.mise.toml` pins nothing. On a normal machine `sh scripts/bootstrap.sh --source` in the ai-dlc checkout completes.
 
 ## Next action
 
-Open a pull request from `claude/fde-kit-review-buildout-yh03mj` to `main`, confirm CI is green, and have one person read the learner path end to end, recording dead ends as issues. Then start R4 with `support-agent-example` (record already in `.ai-dlc/work/`), which the technical guides now make possible.
+Review and merge [pull request #1](https://github.com/Sean-Koval/fde-kit/pull/1), then have one person read the learner path end to end, recording dead ends as issues. Then start R4 with `support-agent-example` (record already in `.ai-dlc/work/`), which the technical guides now make possible.
 
 ## Authoritative links
 
