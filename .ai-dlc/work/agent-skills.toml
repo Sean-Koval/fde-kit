@@ -1,0 +1,14 @@
+schema = 1
+id = "agent-skills"
+title = "Let an FDE run the kit's methods inside an agent harness"
+scope = "Add agents/README.md and six agent skills in the AI-DLC convention: fde-workflow-trace, fde-opportunity-scorecard, fde-responsibility-matrix, fde-eval-pack, fde-security-review, fde-field-report."
+requires_spec = false
+spec_reason = "Markdown agent instructions governed by the agent skill schema; no software behavior."
+acceptance = [
+    "agents/skills/<name>/SKILL.md exists for all six skills with frontmatter name matching the directory and a one-line description that says when to use it.",
+    "Each skill states the evidence it must obtain before producing output, the procedure, the toolkit template path it fills, the human guide it defers to for judgment, and completion checks.",
+    "No skill invents owners, thresholds, evidence, or approvals; missing inputs become marked gaps.",
+    "agents/README.md explains installation into .claude/skills or .agents/skills and through AI-DLC, and links every skill.",
+    "README.md and the toolkit index mention the agent layer.",
+]
+reviewed = true

@@ -1,0 +1,2 @@
+[tools]
+# No pinned runtime. Checks use the system python3 (3.11+) and git.

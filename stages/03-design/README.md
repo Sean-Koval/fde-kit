@@ -48,13 +48,24 @@ Explore and validate a feasible solution approach, including experience, technic
 
 ## Related capabilities
 
+Skill guides:
+
 - [Human, software, and AI system design](../../skills/ai-system-design.md)
+- [Context engineering and prompt design](../../skills/context-engineering.md)
+- [Designing tool-using agents](../../skills/agent-and-tool-design.md)
+- [Retrieval and grounding](../../skills/retrieval-and-grounding.md)
 - [Evaluation and staged rollout](../../skills/evaluation-and-rollout.md)
+- [Grader design and error analysis](../../skills/eval-engineering.md)
+
+Toolkit artifacts:
+
 - [Workflow trace](../../toolkit/workflow-trace.md)
 - [Responsibility matrix](../../toolkit/responsibility-matrix.md)
+- [Pilot charter](../../toolkit/pilot-charter.md)
+- [AI security and governance review](../../toolkit/ai-security-review.md)
 - [Evaluation pack](../../toolkit/evaluation-pack.md)
 
-Related catalogs: [Skills](../../skills/README.md) teach reusable capabilities; [Toolkit](../../toolkit/README.md) contains reusable artifacts.
+Related catalogs: [Skills](../../skills/README.md) teach reusable capabilities; [Toolkit](../../toolkit/README.md) contains reusable artifacts; [Agent skills](../../agents/README.md) run the same methods inside an agent harness.
 
 ## Practice
 

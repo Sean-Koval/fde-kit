@@ -1,0 +1,8 @@
+_src_path: /home/user/sean-koval/ai-dlc/project-templates
+capabilities:
+- scm
+- agent-client
+initialize: false
+preset: generic
+project_name: project-fde-kit
+

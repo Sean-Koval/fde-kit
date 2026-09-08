@@ -48,13 +48,23 @@ Use outcomes, learning, and demand to decide whether and how to extend the value
 
 ## Related capabilities
 
+Skill guides:
+
 - [Workflow discovery and opportunity framing](../../skills/workflow-discovery.md)
+- [Discovery interviewing and workshop facilitation](../../skills/discovery-interviewing.md)
 - [Adoption, operations, and product feedback](../../skills/adoption-and-feedback.md)
+- [Executive communication and expectation management](../../skills/executive-communication.md)
+
+Toolkit artifacts:
+
 - [Opportunity scorecard](../../toolkit/opportunity-scorecard.md)
+- [Discovery interview guide](../../toolkit/discovery-interview-guide.md)
 - [Operating plan](../../toolkit/operating-plan.md)
+- [Executive readout](../../toolkit/executive-readout.md)
+- [Field report](../../toolkit/field-report.md)
 - [Business case](../../toolkit/business-case.md)
 
-Related catalogs: [Skills](../../skills/README.md) teach reusable capabilities; [Toolkit](../../toolkit/README.md) contains reusable artifacts.
+Related catalogs: [Skills](../../skills/README.md) teach reusable capabilities; [Toolkit](../../toolkit/README.md) contains reusable artifacts; [Agent skills](../../agents/README.md) run the same methods inside an agent harness.
 
 ## Practice
 

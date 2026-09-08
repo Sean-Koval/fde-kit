@@ -1,0 +1,33 @@
+name: Verify
+on:
+  pull_request:
+  push:
+    branches: [main]
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      # The check IDs below mirror [checks] in ai-dlc.toml. CI runs the scripts
+      # directly because no AI-DLC release bootstrap is published yet; locally
+      # and in agent sessions the same manifest runs through
+      # `ai-dlc project check --required`. See docs/decisions/0001-adopt-ai-dlc.md.
+      - name: generated
+        run: python3 scripts/check_generated.py
+      - name: links
+        run: python3 scripts/check_links.py
+      - name: schemas
+        run: python3 scripts/check_schemas.py
+      - name: whitespace
+        run: python3 scripts/check_whitespace.py
+      - name: receipt
+        if: always()
+        run: |
+          mkdir -p "$RUNNER_TEMP/receipt"
+          printf '{"repository":"%s","sha":"%s","checks":["generated","links","schemas","whitespace"],"status":"%s"}\n' \
+            "$GITHUB_REPOSITORY" "$GITHUB_SHA" "${{ job.status }}" > "$RUNNER_TEMP/receipt/fde-kit-receipt.json"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: fde-kit-receipt
+          path: ${{ runner.temp }}/receipt/fde-kit-receipt.json

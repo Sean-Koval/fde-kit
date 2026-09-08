@@ -1,0 +1,12 @@
+schema = 1
+id = "support-agent-example"
+title = "Second worked example: a retrieval-grounded, tool-using support agent"
+scope = "Add examples/support-agent-ai/README.md showing a fictional engagement whose shape differs from invoice intake: permissions-aware retrieval, tool approval tiers, prompt-injection handling, and separate evaluation of retrieval and generation."
+requires_spec = false
+spec_reason = "Documentation content governed by the example rules; no software behavior."
+acceptance = [
+    "The example states it is fictional, references all seven stages, and completes excerpts of the responsibility matrix, evaluation pack, rollout plan, AI security review, and field report.",
+    "It shows retrieval quality and answer quality measured separately with a predeclared analysis and a limitations section.",
+    "examples/README.md links it and the root README mentions two examples.",
+]
+reviewed = false

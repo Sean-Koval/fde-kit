@@ -1,0 +1,34 @@
+schema = 4
+
+[project]
+name = "FDE Kit"
+
+[roles]
+scm = "github"
+agent-client = ["claude-code", "codex"]
+
+[scm]
+repository = "Sean-Koval/fde-kit"
+workflow = "verify.yml"
+target_branch = "main"
+receipt_artifacts = ["fde-kit-receipt"]
+
+[gates]
+finish = ["pr-merged", "ci-green"]
+
+[checks]
+required = ["generated", "links", "schemas", "whitespace"]
+
+[checks.commands]
+generated = "ai-dlc agents render --check"
+links = "python3 scripts/check_links.py"
+schemas = "python3 scripts/check_schemas.py"
+whitespace = "python3 scripts/check_whitespace.py"
+
+[setup]
+steps = []
+
+# This repository is a Markdown learning center and field toolkit. Checks run on the
+# system python3 (3.11+) and git; no language runtime is pinned in .mise.toml.
+# The tracker and specification roles are intentionally not configured: reviewed
+# work records in .ai-dlc/work/ are tracked manually until a tracker is selected.

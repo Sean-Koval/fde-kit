@@ -48,12 +48,22 @@ Turn evidence into a shared problem definition, desired outcome, success measure
 
 ## Related capabilities
 
+Skill guides:
+
 - [Workflow discovery and opportunity framing](../../skills/workflow-discovery.md)
+- [Discovery interviewing and workshop facilitation](../../skills/discovery-interviewing.md)
+- [Executive communication and expectation management](../../skills/executive-communication.md)
+
+Toolkit artifacts:
+
 - [Workflow trace](../../toolkit/workflow-trace.md)
 - [Opportunity scorecard](../../toolkit/opportunity-scorecard.md)
+- [Stakeholder map](../../toolkit/stakeholder-map.md)
 - [Business case](../../toolkit/business-case.md)
+- [Pilot charter](../../toolkit/pilot-charter.md)
+- [Executive readout](../../toolkit/executive-readout.md)
 
-Related catalogs: [Skills](../../skills/README.md) teach reusable capabilities; [Toolkit](../../toolkit/README.md) contains reusable artifacts.
+Related catalogs: [Skills](../../skills/README.md) teach reusable capabilities; [Toolkit](../../toolkit/README.md) contains reusable artifacts; [Agent skills](../../agents/README.md) run the same methods inside an agent harness.
 
 ## Practice
 

@@ -1,0 +1,14 @@
+schema = 1
+id = "system-patterns-and-diagrams"
+title = "Make the kit's key ideas visible as diagrams on GitHub"
+scope = "Add learning/system-patterns.md with Mermaid diagrams for five reference patterns, and add Mermaid diagrams for the lifecycle loop and the operating model to the existing learning pages."
+requires_spec = false
+spec_reason = "Documentation content; no software behavior."
+acceptance = [
+    "learning/system-patterns.md describes assist, extract-validate-act, retrieval-grounded assistant, tool-using agent, and batch classification and routing, each with a Mermaid diagram, when to use it, boundary and evaluation notes, and links to the relevant skill guides.",
+    "learning/engagement-lifecycle.md contains a Mermaid diagram showing the seven stages and the loop-back paths.",
+    "learning/what-is-an-fde.md or learning/operating-principles.md contains a Mermaid diagram of the seven-move operating model mapped to the seven artifacts.",
+    "Every diagram follows docs/decisions/0003-mermaid-for-diagrams.md and renders on GitHub.",
+    "learning/README.md links the patterns page.",
+]
+reviewed = true
